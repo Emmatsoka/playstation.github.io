@@ -1,0 +1,405 @@
+@font-face {
+    font-family: psbetu;
+    src: url(../fonts/psbetu.ttf);
+}
+@font-face {
+ 
+  font-family: zrnic;
+    src: url(../fonts/Zrnic.ttf);
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+
+    box-sizing: border-box;
+}
+
+
+body{
+    margin:0 !important;
+    padding:0 !important;
+color:rgb(0, 0, 0) !important;
+
+}
+  
+header{
+   
+    background-image: url('../images/feherhatter.png');
+    height: 105vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+  
+  #image {
+    max-width: 105% !important;
+    max-height: 105% !important;
+    position: absolute;
+    top: 47%;
+    
+    opacity: 0;
+    animation: slide-in 2.2s ease-in-out forwards, nagyitas 6s ease-in-out infinite;
+    -webkit-animation: slide-in 2.2s ease-in-out forwards, nagyitas 6s ease-in-out infinite;
+   
+}
+
+
+#image1 {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    position: absolute;
+    top: 45%;
+    opacity: 0;
+    animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
+    -webkit-animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
+}
+#valami{
+  background-image: url('https://assets.stickpng.com/images/5a4e432a2da5ad73df7efe7a.png');
+}
+@keyframes nagyitas {
+	0% {
+    scale: 1.0;
+    transform: translatex(0px);
+    -webkit-transform: translatex(0px);
+    -moz-transform: translatex(0px);
+    -ms-transform: translatex(0px);
+    -o-transform: translatex(0px);
+}
+	50% {
+  transform: translatex(5px);
+  scale: 1.040;
+  -webkit-transform: translatex(5px);
+  -moz-transform: translatex(5px);
+  -ms-transform: translatex(5px);
+  -o-transform: translatex(5px);
+}
+  100%{
+    scale: 1.0;
+    transform: translatex(0px);
+    -webkit-transform: translatex(0px);
+    -moz-transform: translatex(0px);
+    -ms-transform: translatex(0px);
+    -o-transform: translatex(0px);
+}
+}
+@keyframes lebeges {
+	0% {
+	
+		transform: translatey(0px);
+	}
+	50% {
+
+		transform: translatey(-15px);
+		-webkit-transform: translatey(-15px);
+		-moz-transform: translatey(-15px);
+		-ms-transform: translatey(-15px);
+		-o-transform: translatey(-15px);
+}
+	100% {
+	
+		transform: translatey(0px);
+	}
+}
+  @keyframes attunes {
+    0% {
+
+        opacity: 0;
+      }
+      
+      100% {
+        opacity: 1;
+      }
+  }
+  @keyframes slide-in {
+    0% {
+      left: -150px;
+      opacity: 0;
+    }
+    100% {
+    margin-left: 30px;
+      left: 0;
+      opacity: 1;
+    }
+  }
+  nav{
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent !important;
+    z-index: 666;
+  }
+
+  /* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7c7c7c;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #626262;
+  }
+  #tartalom{
+    background-color: white;
+  }
+  #ps1szoveg p{
+    font-family: zrnic;
+  }
+  #ps1szoveg{
+    text-align: center;
+    margin-top: 30vh;
+    font-size: 1.9vw;
+    font-weight: 660;
+    animation: attunes 1.2s ease-in-out forwards;
+    -webkit-animation: attunes 1.2s ease-in-out forwards;
+}
+#ps1szoveg span{
+    display: inline-block !important;
+    font-size: 1.3vw;
+    font-weight: 300;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+  #gomb{
+    z-index: 500;
+    transition: 0.4s all;
+    background-color: black;
+    color:white;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 17px;
+    padding-right: 17px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 1.1vw;
+    border:none;
+    -webkit-transition: 0.4s all;
+    -moz-transition: 0.4s all;
+    -ms-transition: 0.4s all;
+    -o-transition: 0.4s all;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.462);
+    animation: attunes 1.4s ease-in-out forwards;
+    -webkit-animation: attunes 1.4s ease-in-out forwards;
+}
+#gomb:hover{
+    transition: 0.4s all;
+    background-color: rgb(117, 117, 117);
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+}
+
+.navbar-brand{
+    font-weight: 700;
+    font-size: 1.7vw;
+    font-family:
+     psbetu;
+    color:rgb(0, 0, 0) !important;
+    animation: attunes 1s ease-in-out forwards;
+    -webkit-animation: attunes 1s ease-in-out forwards;
+}
+.navbar-brand img{
+    margin-right: 5px;
+    animation: attunes 1s ease-in-out forwards;
+    -webkit-animation: attunes 1s ease-in-out forwards;
+}
+.navbar-nav{
+    float:right !important;
+    text-align: right !important;
+ 
+}
+#navbarText{
+    font-size: 1.15vw;
+    font-weight: 600;
+
+}
+@media screen and (max-width: 1160px) {
+  #gomb{
+    font-size: 15px;
+  }
+  #ps1szoveg span{
+    font-size: 18px;
+    max-width: 300px;
+  }
+  #ps1szoveg p{
+    font-size: 22px;
+  }
+  #ps1szoveg{
+    padding: 0;
+    text-align: center;
+  }
+  .navbar-brand{
+    font-size: 22px;
+  }
+  #navbarText, .nav-item, .nav-link{
+    font-size:22px !important;
+  }
+}
+.nav-link{
+    color: rgb(0, 0, 0) !important;
+    animation: attunes 1s ease-in-out forwards;
+    -webkit-animation: attunes 1s ease-in-out forwards;
+}
+@keyframes borderlent {
+  0% {
+    border-bottom: 0px black solid;
+
+  }
+  100% {
+    border-bottom: 1px black solid;
+
+  }
+}
+.nav-item:hover {
+  animation: borderlent 0.5s ease-in-out forwards;
+  -webkit-animation: borderlent 0.5s ease-in-out forwards;
+}
+.nav-item{
+  color:black;
+}
+.active a{
+    color: rgb(34, 34, 34) !important;
+}
+.row{
+    max-width: 100% !important;
+}
+#playstationlogo{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#playstationlogo:hover{
+    scale:1.020;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+#tartalom{
+  color:black;
+  font-family: zrnic;
+}
+.size-22{
+  font-weight: 200; font-size: 22px;
+
+}
+.arial{
+  font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+  max-width: 500px;
+  background-color: rgb(49, 49, 49);
+}
+#attuneses{
+  position:absolute;
+  display: block;
+  top:0;
+  left:0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0),rgba(0, 0, 0, 0), rgb(253, 253, 253));
+  height: 105vh;
+  width: 100%;
+  z-index: 0;
+}
+.bold{
+  font-weight: 550;
+}
+footer{
+  background-color: black;
+  height: fit-content;
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.feher{
+  color:white;
+}
+.fekete{
+  color:black;
+}
+footer .row{
+  margin:0 auto;
+  
+}
+footer .row .col-md {
+  padding: 40px;
+  text-align: center;
+}
+footer .col-md p{
+  color:#bebcbc;
+}
+.scrollFade {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.scrollFade--visible {
+  opacity: 1;
+  pointer-events: all;
+}
+.scrollFade--animate {
+  animation: fade-in 0.6s ease-in-out forwards;
+  -webkit-animation: fade-in 0.6s ease-in-out forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translatey(100px);
+
+    -webkit-transform: translatey(100px);
+    -moz-transform: translatey(100px);
+    -ms-transform: translatey(100px);
+    -o-transform: translatey(100px);
+}
+  100% {
+    opacity: 1;
+    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+    -moz-transform: translatey(0px);
+    -ms-transform: translatey(0px);
+    -o-transform: translatey(0px);
+}
+}
+
+#tartalom{
+  background-image: url('https://i.pinimg.com/originals/74/43/a3/7443a31b6a19e5630b94a6538ff9bdd1.gif');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#ize{
+
+  display: block;
+
+  background: rgba(255, 255, 255, 0.874);
+  height:fit-content;
+  width: 100%;
+  z-index: 0;
+  backdrop-filter: blur(2px);
+}
+#tartalomszoveg{
+  z-index:699;
+  padding:10px;
+
+}
