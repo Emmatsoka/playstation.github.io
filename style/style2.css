@@ -205,6 +205,11 @@ header{
     padding-bottom: 12.5px;
     padding-left: 17.5px;
     padding-right: 17.5px;
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    -moz-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    -o-transform: translateY(-4px);
 }
 
 .navbar-brand{
@@ -396,7 +401,7 @@ footer .col-md p{
 
   display: block;
 
-  background: rgba(255, 255, 255, 0.874);
+  background: rgba(255, 255, 255, 0.792);
   height:fit-content;
   width: 100%;
   z-index: 0;
@@ -410,4 +415,44 @@ footer .col-md p{
 }
 a:hover{
   text-decoration: none !important;
+}
+
+footer ul li{
+  text-align: left;
+  display: inline-block;
+  padding-left: 10px;
+  margin:0 auto;
+  padding-right: 10px;
+
+}
+footer ul{
+  margin: 0 auto !important;
+  padding-inline-start: 0px !important;
+}
+footer ul li a{
+  color:#bebcbc !important;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+
+}
+footer ul li a:hover{
+  color:#d6d6d6 !important;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+}
+#udvozoljuk{
+  background: black;
+  color: white !important;
+  width: fit-content;
+  margin:0 auto;
+  padding:5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.929);
 }
