@@ -561,7 +561,7 @@ nav{
 
 @media screen and (min-width: 991px) {
   .img-fluid{
-    max-width: 50% !important;
+    max-width: 60% !important;
   }
 }
 #tartalomszoveg{
@@ -571,6 +571,7 @@ nav{
 #idezetes{
   max-width: 500px;
   margin:0 auto;
+ 
 }
 
 .dropdown-menu{
