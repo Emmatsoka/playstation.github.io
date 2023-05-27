@@ -595,3 +595,12 @@ nav{
 .custom-toggler.navbar-toggler {
   border:none !important;
 } 
+
+#kapcsolat li{
+  list-style-type: none;
+  display:inline-block;
+}
+#kapcsolat li img{
+  width: 18px;
+  height: auto;
+}
