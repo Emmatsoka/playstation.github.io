@@ -4,34 +4,65 @@
 }
 @font-face {
  
+
   font-family: zrnic;
     src: url(../fonts/Zrnic.ttf);
 }
 html{
   scroll-behavior: smooth;
+  
 }
 *{
 
     box-sizing: border-box;
 }
 
+body{
+  background-color: var(--harmadszin);
+}
+
+:root{
+  --oldalszin: white ;
+  --masodszin: rgb(202, 202, 202) ;
+  --harmadszin: rgba(3, 0, 53, 0.899) ;
+  --negyedszin: rgb(40, 40, 40) ;
+  --gorgeto1: #3d3d3d ;
+  --gorgeto2: #7c7c7c ;
+  --gorgeto3: #626262 ;
+  --hatter: url('https://i.imgur.com/vDvREse.png');
+
+}
+.vilagos-tema{
+  --oldalszin: rgb(0, 0, 0) !important;
+  --masodszin: rgb(54, 54, 54) !important;
+  --harmadszin: rgba(255, 255, 255, 0.792) !important;
+  --negyedszin: rgb(227, 227, 227) !important;
+  --gorgeto1: #ffffff !important;
+  --gorgeto2: #7c7c7c !important;
+  --gorgeto3: #626262 !important;
+  --hatter: url('https://i.imgur.com/R5kHEFZ.png');
+  transition: 0.6s !important;
+  -webkit-transition: 0.6s !important;
+  -moz-transition: 0.6s !important;
+  -ms-transition: 0.6s !important;
+  -o-transition: 0.6s !important;
+}
 
 body{
     margin:0 !important;
     padding:0 !important;
-color:rgb(0, 0, 0) !important;
+color:var(--oldalszin) !important;
 
 }
   
-header{
+#header{
    
-    background-image: url('../images/feherhatter.png');
+    background-image: var(--hatter);
     height: 104vh;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+
 }
 
   
@@ -40,7 +71,7 @@ header{
     max-height: 105% !important;
     position: absolute;
     top: 47%;
-    
+    transition: transform 0.2s ease-out;
     opacity: 0;
     animation: slide-in 2.2s ease-in-out forwards, nagyitas 6s ease-in-out infinite;
     -webkit-animation: slide-in 2.2s ease-in-out forwards, nagyitas 6s ease-in-out infinite;
@@ -53,6 +84,7 @@ header{
     max-height: 100% !important;
     position: absolute;
     top: 45%;
+    transition: transform 0.2s ease-out;
     opacity: 0;
     animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
     -webkit-animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
@@ -141,17 +173,17 @@ header{
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #ffffff;
+    background: var(--gorgeto1);
   }
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #7c7c7c;
+    background: var(--gorgeto2);
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #626262;
+    background: var(--gorgeto3);
   }
   #tartalom{
     background-color: white;
@@ -217,7 +249,7 @@ header{
     font-size: 1.7vw;
     font-family:
      psbetu;
-    color:rgb(0, 0, 0) !important;
+    color:var(--oldalszin)  !important;
     animation: attunes 1s ease-in-out forwards;
     -webkit-animation: attunes 1s ease-in-out forwards;
 }
@@ -259,7 +291,7 @@ header{
   }
 }
 .nav-link{
-    color: rgb(0, 0, 0) !important;
+    color: var(--oldalszin)  !important;
     animation: attunes 1s ease-in-out forwards;
     -webkit-animation: attunes 1s ease-in-out forwards;
 }
@@ -278,13 +310,38 @@ header{
   -webkit-animation: borderlent 0.5s ease-in-out forwards;
 }
 .nav-item{
-  color:black;
+  color:var(--oldalszin) ;
+  transition: 0.6s !important;
+  -webkit-transition: 0.6s !important;
+  -moz-transition: 0.6s !important;
+  -ms-transition: 0.6s !important;
+  -o-transition: 0.6s !important;
+}
+.nav-link{
+  transition: 0.6s !important;
+  -webkit-transition: 0.6s !important;
+  -moz-transition: 0.6s !important;
+  -ms-transition: 0.6s !important;
+  -o-transition: 0.6s !important;
+}
+.navbar-brand{
+  transition: 0.6s !important;
+  -webkit-transition: 0.6s !important;
+  -moz-transition: 0.6s !important;
+  -ms-transition: 0.6s !important;
+  -o-transition: 0.6s !important;
 }
 .active a{
-    color: rgb(34, 34, 34) !important;
+    color: var(--masodszin) !important;
+    transition: 0.6s !important;
+    -webkit-transition: 0.6s !important;
+    -moz-transition: 0.6s !important;
+    -ms-transition: 0.6s !important;
+    -o-transition: 0.6s !important;
 }
 .row{
     max-width: 100% !important;
+    margin: 0 auto !important
 }
 #playstationlogo{
   transition: 0.5s;
@@ -302,7 +359,7 @@ header{
     -o-transition: 0.5s;
 }
 #tartalom{
-  color:black;
+  color:var(--oldalszin) ;
   font-family: zrnic;
 }
 .size-22{
@@ -334,8 +391,7 @@ footer{
   background-color: black;
   height: fit-content;
   max-width: 100%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+
   box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.929);
 }
 .feher{
@@ -398,10 +454,13 @@ footer .col-md p{
   background-size: cover;
 }
 #ize{
-
+  transition: 0.6s !important;
+  -webkit-transition: 0.6s !important;
+  -moz-transition: 0.6s !important;
+  -ms-transition: 0.6s !important;
+  -o-transition: 0.6s !important;
   display: block;
-
-  background: rgba(255, 255, 255, 0.792);
+  background: var(--harmadszin);
   height:fit-content;
   width: 100%;
   z-index: 0;
@@ -409,10 +468,11 @@ footer .col-md p{
 }
 #tartalomszoveg{
   z-index:699;
-  padding:10px;
+  padding:15px;
 
 
 }
+
 a:hover{
   text-decoration: none !important;
 }
@@ -447,12 +507,29 @@ footer ul li a:hover{
   -o-transition: 0.6s;
 }
 #udvozoljuk{
-  background: black;
-  color: white !important;
+  background: var(--negyedszin);
+  color: var(--oldalszin)  !important;
   width: fit-content;
   margin:0 auto;
   padding:5px;
   padding-left: 15px;
   padding-right: 15px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.929);
+ 
+}
+
+#mozgo-kep{
+  transition: transform 0.4s ease-out;
+  -webkit-transition: transform 0.4s ease-out;
+  -moz-transition: transform 0.4s ease-out;
+  -ms-transition: transform 0.4s ease-out;
+  -o-transition: transform 0.4s ease-out;
+}
+
+#temavalto{
+  height: 20px !important;
+  width: 20px !important;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: 666;
+  cursor:pointer;
 }
