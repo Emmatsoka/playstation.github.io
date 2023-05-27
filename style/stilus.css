@@ -562,3 +562,11 @@ nav{
     max-width: 50% !important;
   }
 }
+#tartalomszoveg{
+  max-width: 900px;
+  margin:0 auto;
+}
+#idezetes{
+  max-width: 500px;
+  margin:0 auto;
+}
