@@ -31,6 +31,7 @@ body{
   --gorgeto3: #626262 ;
   --hatter: url('https://i.imgur.com/vDvREse.png');
   --hr: rgb(220, 220, 220);
+  --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.875)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
 }
 .vilagos-tema{
@@ -42,6 +43,7 @@ body{
   --gorgeto2: #7c7c7c !important;
   --gorgeto3: #626262 !important;
   --hatter: url('https://i.imgur.com/R5kHEFZ.png');
+  --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.951)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
   --hr: rgb(49, 49, 49);
   transition: 0.6s !important;
@@ -578,7 +580,11 @@ nav{
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.875);
 }
 .dropdown-menu a{
   color: var(--oldalszin) !important;
+}
+.custom-toggler .navbar-toggler-icon {
+  background-image: var(--navburger);
 }
