@@ -30,6 +30,7 @@ body{
   --gorgeto2: #7c7c7c ;
   --gorgeto3: #626262 ;
   --hatter: url('https://i.imgur.com/vDvREse.png');
+  --hr: rgb(220, 220, 220);
 
 }
 .vilagos-tema{
@@ -41,6 +42,8 @@ body{
   --gorgeto2: #7c7c7c !important;
   --gorgeto3: #626262 !important;
   --hatter: url('https://i.imgur.com/R5kHEFZ.png');
+
+  --hr: rgb(49, 49, 49);
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
@@ -371,7 +374,7 @@ color:var(--oldalszin) !important;
 }
 hr{
   max-width: 500px;
-  background-color: rgb(49, 49, 49);
+  background-color: var(--hr);
 }
 #attuneses{
   position:absolute;
@@ -532,4 +535,30 @@ footer ul li a:hover{
   margin-left: 10px;
   z-index: 666;
   cursor:pointer;
+}
+@media screen and (max-width: 991px) {
+  .navbar-nav{
+    float: none !important;
+    width: 100% !important;
+    text-align: center !important;
+}
+.dropdown-toggle{
+  float: none !important;
+  text-align: center;
+}
+nav{
+  background-color: #1010100d !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.167);
+}
+.nav-link{
+  float: none !important;
+  text-align: center;
+}
+}
+
+@media screen and (min-width: 991px) {
+  .img-fluid{
+    max-width: 50% !important;
+  }
 }
