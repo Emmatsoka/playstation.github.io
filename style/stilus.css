@@ -588,3 +588,6 @@ nav{
 .custom-toggler .navbar-toggler-icon {
   background-image: var(--navburger);
 }
+.custom-toggler.navbar-toggler {
+  border:none !important;
+} 
