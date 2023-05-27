@@ -37,7 +37,7 @@ body{
 .vilagos-tema{
   --oldalszin: rgb(0, 0, 0) !important;
   --masodszin: rgb(54, 54, 54) !important;
-  --harmadszin: rgba(255, 255, 255, 0.792) !important;
+  --harmadszin: rgba(228, 228, 228, 0.792) !important;
   --negyedszin: rgb(227, 227, 227) !important;
   --gorgeto1: #ffffff !important;
   --gorgeto2: #7c7c7c !important;
