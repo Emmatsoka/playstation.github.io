@@ -24,12 +24,12 @@ body{
 :root{
   --oldalszin: white ;
   --masodszin: rgb(202, 202, 202) ;
-  --harmadszin: rgba(0, 0, 0, 0.886) ;
+  --harmadszin: rgba(0, 0, 0, 0.927) ;
   --negyedszin: rgb(40, 40, 40) ;
   --gorgeto1: #3d3d3d ;
   --gorgeto2: #7c7c7c ;
   --gorgeto3: #626262 ;
-  --hatter: url('https://i.imgur.com/vDvREse.png');
+  --hatter: url('../images/kekhatter.png');
   --hr: rgb(220, 220, 220);
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.875)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
@@ -42,7 +42,7 @@ body{
   --gorgeto1: #ffffff !important;
   --gorgeto2: #7c7c7c !important;
   --gorgeto3: #626262 !important;
-  --hatter: url('https://i.imgur.com/R5kHEFZ.png');
+  --hatter: url('../images/feherhatter.png');
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.951)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 
   --hr: rgb(49, 49, 49);
