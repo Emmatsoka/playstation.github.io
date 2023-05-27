@@ -24,7 +24,7 @@ body{
 :root{
   --oldalszin: white ;
   --masodszin: rgb(202, 202, 202) ;
-  --harmadszin: rgba(3, 0, 53, 0.899) ;
+  --harmadszin: rgba(0, 0, 0, 0.886) ;
   --negyedszin: rgb(40, 40, 40) ;
   --gorgeto1: #3d3d3d ;
   --gorgeto2: #7c7c7c ;
@@ -300,11 +300,11 @@ color:var(--oldalszin) !important;
 }
 @keyframes borderlent {
   0% {
-    border-bottom: 0px black solid;
+    border-bottom: 0px var(--oldalszin) solid;
 
   }
   100% {
-    border-bottom: 1px black solid;
+    border-bottom: 1px var(--oldalszin) solid;
 
   }
 }
@@ -569,4 +569,16 @@ nav{
 #idezetes{
   max-width: 500px;
   margin:0 auto;
+}
+
+.dropdown-menu{
+  background-color: var(--harmadszin) !important;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.dropdown-menu a{
+  color: var(--oldalszin) !important;
 }
