@@ -38,8 +38,10 @@ body{
   --betoltoforgo: #303052;
   --betolto: #f3f3f3;
   --navszin: black;
+  --sotetebbbetu: rgb(211, 211, 211);
 }
 .vilagos-tema{
+  --sotetebbbetu: rgb(37, 37, 37);
   --oldalszin: rgb(0, 0, 0) !important;
   --masodszin: rgb(54, 54, 54) !important;
   --harmadszin: rgba(228, 228, 228, 0.792) !important;
@@ -499,7 +501,7 @@ footer .col-md p{
   padding:15px;
   max-width: 1500;
   margin:0 auto;
-
+  color: var(--sotetebbbetu) !important;
   padding-bottom:120px;
 }
 #tartalomrow{
@@ -829,4 +831,17 @@ nav{
 .kissebbkep{
   width: 50% !important;
   height: auto !important;
+}
+.dropdown-menu {
+  display: block;
+  opacity: 0;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all .3s ease-in;
+}
+.dropdown-menu.show {
+  max-height: 500px;
+  opacity: 1;
+  padding: 0.5rem 0;
 }
