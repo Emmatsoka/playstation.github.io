@@ -730,25 +730,18 @@ nav{
 #betolto {
   position: absolute;
   top: 50%;
-  left:0;
+  left: 50%;
   transform: translate(-50%, -50%);
-  transition:0.6s;
+  transition: 0.6s;
   z-index: 1;
   width: 80px;
   height: 80px;
   border: 8px solid var(--betolto);
   border-radius: 50%;
   border-top: 8px solid var(--betoltoforgo);
-  -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
-  -webkit-transition:0.6s;
-  -moz-transition:0.6s;
-  -ms-transition:0.6s;
-  -o-transition:0.6s;
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
+  margin-top: -44px; /* Az elem magasságának felének negatív margin */
+  margin-left: -44px; 
 }
 
 @keyframes spin {
