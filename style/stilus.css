@@ -35,7 +35,7 @@ body{
   --tartalomcol: #0000005c;
   --dropdownhovera: rgb(224, 224, 224);
   --dropdownhover: rgba(50, 50, 50, 0.749);
-  --betoltoforgo: #222152;
+  --betoltoforgo: #303052;
   --betolto: #f3f3f3;
 }
 .vilagos-tema{
@@ -750,13 +750,28 @@ nav{
 }
 #egesz {
   opacity:0;
+  transition: 0.6s !important;
+  -webkit-transition: 0.6s !important;
+  -moz-transition: 0.6s !important;
+  -ms-transition: 0.6s !important;
+  -o-transition: 0.6s !important;
 }
 #feketenav{
   background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
 }
 #egesz.aktiv {
   opacity:1;
+  transition: 0.7s !important;
+  -webkit-transition: 0.7s !important;
+  -moz-transition: 0.7s !important;
+  -ms-transition: 0.7s !important;
+  -o-transition: 0.7s !important;
 }
 #betolto.eltunes{
   opacity:0;
+  transition: 0.7s !important;
+  -webkit-transition: 0.7s !important;
+  -moz-transition: 0.7s !important;
+  -ms-transition: 0.7s !important;
+  -o-transition: 0.7s !important;
 }
