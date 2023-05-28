@@ -33,6 +33,8 @@ body{
   --hr: rgb(220, 220, 220);
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.875)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   --tartalomcol: #0000005c;
+  --dropdownhovera: rgb(224, 224, 224);
+  --dropdownhover: rgba(50, 50, 50, 0.749);
 }
 .vilagos-tema{
   --oldalszin: rgb(0, 0, 0) !important;
@@ -44,9 +46,11 @@ body{
   --gorgeto3: #626262 !important;
   --hatter: url('../images/feherhatter.png');
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.951)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-
   --hr: rgb(49, 49, 49);
   --tartalomcol: #ffffff5c;
+  --dropdownhover: rgb(191, 191, 191);
+  --dropdownhovera: rgba(50, 50, 50, 0.749);
+
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
@@ -492,18 +496,21 @@ footer .col-md p{
 #tartalomrow{
   max-width: 1300px !important;
 }
+#tartalomhr{
+  max-width: 1280px !important;
+}
 @media screen and (min-width: 765px) {
   #tartalomcol{
   background-color: var(--tartalomcol)!important;
   padding: 20px !important;
   margin:10px !important;
+
   }
 }
 @media screen and (max-width: 765px) {
   #tartalomrow{
     background-color: var(--tartalomcol)!important;
     padding: 20px !important;
-   
     }
 }
 #eloszo{
@@ -546,7 +553,8 @@ footer ul li a:hover{
 #udvozoljuk{
   background: var(--negyedszin) !important;
   color: var(--oldalszin)  !important;
-  width: fit-content !important;
+  max-width: 500px;
+  text-align: center;
   margin:0 auto !important;
   padding:5px !important;
   padding-left: 15px !important;
@@ -617,7 +625,22 @@ nav{
 }
 .dropdown-menu a{
   color: var(--oldalszin) !important;
+  transition: 0.4s !important;
+  -webkit-transition: 0.4s !important;
+  -moz-transition: 0.4s !important;
+  -ms-transition: 0.4s !important;
+  -o-transition: 0.4s !important;
 }
+.dropdown-menu a:hover{
+    color: var(--dropdownhovera);
+    background-color: var(--dropdownhover);
+    transition: 0.4s !important;
+    -webkit-transition: 0.4s !important;
+    -moz-transition: 0.4s !important;
+    -ms-transition: 0.4s !important;
+    -o-transition: 0.4s !important;
+}
+
 .custom-toggler .navbar-toggler-icon {
   background-image: var(--navburger);
 }
@@ -674,4 +697,9 @@ nav{
   -moz-transform: translateY(-5px);
   -ms-transform: translateY(-5px);
   -o-transform: translateY(-5px);
+}
+.center{
+  margin:0 auto !important ;
+  text-align: center !important;
+
 }
