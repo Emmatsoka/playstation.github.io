@@ -1,0 +1,32 @@
+#mozgo-kep{
+    transition: transform 0.4s ease-out;
+    -webkit-transition: transform 0.4s ease-out;
+    -moz-transition: transform 0.4s ease-out;
+    -ms-transition: transform 0.4s ease-out;
+    -o-transition: transform 0.4s ease-out;
+  }
+  #kep1 {
+    max-width: 155% !important;
+    max-height: 155% !important;
+    position: absolute;
+    margin-left: 170px !important;
+    top: 47%;
+    transition: transform 0.2s ease-out;
+    opacity: 0;
+    animation: slide-in 2.2s ease-in-out forwards, nagyitas 6s ease-in-out infinite;
+    -webkit-animation: slide-in 2.2s ease-in-out forwards, nagyitas 6s ease-in-out infinite;
+   
+}
+
+
+#kep2 {
+    max-width: 150% !important;
+    max-height: 150% !important;
+    position: absolute;
+    margin-left:160px !important;
+    top: 45%;
+    transition: transform 0.2s ease-out;
+    opacity: 0;
+    animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
+    -webkit-animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
+}
