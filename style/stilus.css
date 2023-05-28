@@ -729,8 +729,9 @@ nav{
 }
 #betolto {
   position: absolute;
-  left: 47%;
-  top: 44%;
+  top: 50%;
+  left:0;
+  transform: translate(-50%, -50%);
   transition:0.6s;
   z-index: 1;
   width: 80px;
@@ -744,34 +745,12 @@ nav{
   -moz-transition:0.6s;
   -ms-transition:0.6s;
   -o-transition:0.6s;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
 }
-@media only screen and (max-width: 800px) {
-  #betolto {
-      position: absolute;
-      left: 45%;
-  }
-  #headerszoveg p{
-      font-size: 25px;
-  }
-}
-@media only screen and (max-width: 500px) {
-  #betolto {
-      position: absolute;
-      left: 43%;
-  }
-}
-@media only screen and (max-width: 440px) {
-  #betolto {
-      position: absolute;
-      left: 40%;
-  }
-}
-@media only screen and (max-width: 300px) {
-  #betolto {
-      position: absolute;
-      left: 37%;
-  }
-}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
