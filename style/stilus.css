@@ -22,7 +22,7 @@ body{
 }
 
 :root{
-  --oldalszin: white ;
+  --oldalszin: #f3f3f3 ;
   --masodszin: rgb(202, 202, 202) ;
   --harmadszin: rgba(0, 0, 0, 0.927) ;
   --negyedszin: rgb(40, 40, 40) ;
@@ -35,6 +35,8 @@ body{
   --tartalomcol: #0000005c;
   --dropdownhovera: rgb(224, 224, 224);
   --dropdownhover: rgba(50, 50, 50, 0.749);
+  --betoltoforgo: #222152;
+  --betolto: #f3f3f3;
 }
 .vilagos-tema{
   --oldalszin: rgb(0, 0, 0) !important;
@@ -50,7 +52,8 @@ body{
   --tartalomcol: #ffffff5c;
   --dropdownhover: rgb(191, 191, 191);
   --dropdownhovera: rgba(50, 50, 50, 0.749);
-
+  --betoltoforgo: #2f2f2f;
+  --betolto: #adadad;
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
@@ -62,7 +65,7 @@ body{
     margin:0 !important;
     padding:0 !important;
 color:var(--oldalszin) !important;
-
+  overflow: hidden;
 }
   
 #header{
@@ -196,7 +199,7 @@ color:var(--oldalszin) !important;
     background: var(--gorgeto3);
   }
   #tartalom{
-    background-color: white;
+    background-color: #f3f3f3;
   }
   #ps1szoveg p{
     font-family: zrnic;
@@ -220,7 +223,7 @@ color:var(--oldalszin) !important;
     z-index: 500;
     transition: 0.4s all;
     background-color: black;
-    color:white;
+    color:#f3f3f3;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 17px;
@@ -404,7 +407,7 @@ footer{
   box-shadow: 0px -2px 20px rgba(0, 0, 0, 0.929);
 }
 .feher{
-  color:white;
+  color:#f3f3f3;
 }
 .fekete{
   color:black;
@@ -498,6 +501,10 @@ footer .col-md p{
 }
 #tartalomhr{
   max-width: 1280px !important;
+}
+#kezdohr{
+  max-width: 300px !important;
+  height: 0.01px;
 }
 @media screen and (min-width: 765px) {
   #tartalomcol{
@@ -702,4 +709,82 @@ nav{
   margin:0 auto !important ;
   text-align: center !important;
 
+}
+#pslogo:hover{
+  animation:fordulas 2s ease-in-out infinite;
+  -webkit-animation:fordulas 2s ease-in-out infinite;
+}
+
+@-moz-keyframes fordulas { 
+100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes fordulas { 
+100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes fordulas { 
+100% { 
+    -webkit-transform: rotate(360deg); 
+    transform:rotate(360deg); 
+} 
+}
+#betolto {
+  position: absolute;
+  left: 47%;
+  top: 44%;
+  transition:0.6s;
+  z-index: 1;
+  width: 80px;
+  height: 80px;
+  border: 8px solid var(--betolto);
+  border-radius: 50%;
+  border-top: 8px solid var(--betoltoforgo);
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  -webkit-transition:0.6s;
+  -moz-transition:0.6s;
+  -ms-transition:0.6s;
+  -o-transition:0.6s;
+}
+@media only screen and (max-width: 800px) {
+  #betolto {
+      position: absolute;
+      left: 45%;
+  }
+  #headerszoveg p{
+      font-size: 25px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #betolto {
+      position: absolute;
+      left: 43%;
+  }
+}
+@media only screen and (max-width: 440px) {
+  #betolto {
+      position: absolute;
+      left: 40%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  #betolto {
+      position: absolute;
+      left: 37%;
+  }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#egesz {
+  opacity:0;
+}
+#feketenav{
+  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
+#egesz.aktiv {
+  opacity:1;
+}
+#betolto.eltunes{
+  opacity:0;
 }

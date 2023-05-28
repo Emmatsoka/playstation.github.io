@@ -26,12 +26,13 @@
       <meta name="twitter:description" content="Üdvözlünk a PlayStation 1 bemutató oldalán! Fedezd fel a retro játékkonzol varázslatos világát, ismerd meg a csodálatosan összeállított hardvert és élvezd a lenyűgöző játékélményt. Ismerkedj meg a PlayStation 1 ikonikus címekkel és fedezd fel, hogyan hozta forradalmi változásokat a videojáték-iparban. Merülj el a nosztalgia és a játékosság érzésében, amelyet csak a PlayStation 1 tud nyújtani.">
       <meta name="twitter:image" content="https://i.imgur.com/P5LWzZK.png">
   </head>
-  <body>
+  <body  onload="betoltes()">
+     <div id="betolto"></div>
   <div id="egesz">
     <div id="attuneses"></div>
       <header id="header">
 
-          <nav class="navbar navbar-expand-lg navbar-light ">
+          <nav class="navbar navbar-expand-lg navbar-light " id="nav">
               <a class="navbar-brand" href="#"><img src="./images/playwhite.png" height="30vh" width="40vw" id="pslogo">PS1</a>
               <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -80,11 +81,11 @@
 
                 <div class="col-md-6" id="ps1szoveg"><img src="./images/playstationlogo.png" height="120vh" width="140vw" id="playstationlogo">
                   <p >PlayStation</p>
-                  <hr>
+                  <hr id="kezdohr">
                   <span id="idezetes">
                     „Éld át a jövőt a PlayStation 1 káprázatos erejével, ahol a lehetőségek határtalanok és a játékélmény örök.‟
                   </span>
-                  <hr>
+                  <hr id="kezdohr">
                
                   <a href="#asd"><button id="gomb">Mutass többet</button></a>           
                   <a href="rajt.html"><button id="gomb">A rajt</button></a>

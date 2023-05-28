@@ -67,3 +67,40 @@ function temavaltas() {
 	// Mentjük a téma értékét a localStorage-ba
 	localStorage.setItem("temamod", tema);
 }
+
+function betoltes(){
+	myVar = setTimeout(oldalmutat, 500);
+}
+
+
+function oldalmutat() {
+  var loader = document.getElementById("betolto");
+  var egesz =   document.getElementById("egesz");
+  loader.classList.add("eltunes");
+  egesz.classList.add("aktiv");
+document.body.style.overflow = "visible";
+}
+
+history.scrollRestoration = 'manual';
+
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
+const navbar = document.getElementById("nav");
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+	navbar.classList.add('feketenav');
+  } else {
+	navbar.classList.remove('feketenav');
+  }
+});
