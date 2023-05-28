@@ -499,6 +499,13 @@ footer .col-md p{
   margin:10px !important;
   }
 }
+@media screen and (max-width: 765px) {
+  #tartalomrow{
+    background-color: var(--tartalomcol)!important;
+    padding: 20px !important;
+   
+    }
+}
 #eloszo{
   text-align: center;
 }
