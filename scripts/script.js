@@ -99,8 +99,8 @@ const navbar = document.getElementById("nav");
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
-	navbar.classList.add('feketenav');
+	navbar.classList.add('attunonav');
   } else {
-	navbar.classList.remove('feketenav');
+	navbar.classList.remove('attunonav');
   }
 });

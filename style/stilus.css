@@ -37,6 +37,7 @@ body{
   --dropdownhover: rgba(50, 50, 50, 0.749);
   --betoltoforgo: #303052;
   --betolto: #f3f3f3;
+  --navszin: black;
 }
 .vilagos-tema{
   --oldalszin: rgb(0, 0, 0) !important;
@@ -54,6 +55,8 @@ body{
   --dropdownhovera: rgba(50, 50, 50, 0.749);
   --betoltoforgo: #2f2f2f;
   --betolto: #adadad;
+  --navszin: #f3f3f3;
+
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
@@ -756,8 +759,13 @@ nav{
   -ms-transition: 0.6s !important;
   -o-transition: 0.6s !important;
 }
-#feketenav{
-  background: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+.attunonav{
+  transition: 0.5s;
+  background: linear-gradient(to bottom, var(--navszin), rgba(0, 0, 0, 0));
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }
 #egesz.aktiv {
   opacity:1;
