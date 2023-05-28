@@ -492,7 +492,7 @@ footer .col-md p{
   backdrop-filter: blur(2px);
 }
 #tartalomszoveg{
-  z-index:699;
+  z-index:20;
   padding:15px;
   max-width: 1500;
   margin:0 auto;
@@ -615,15 +615,34 @@ nav{
 
 @media screen and (min-width: 991px) {
   .img-fluid{
-    max-width: 60% !important;
+    max-width: 70% !important;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    z-index:669 !important;
   }
+}
+.img-fluid{
+  z-index:669 !important;
+  display: inline;
 }
 #idezetes{
   max-width: 500px;
   margin:0 auto;
  
 }
-
+.img-fluid:hover{
+  scale: 1.050;
+  z-index:669 !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+}
 .dropdown-menu{
   background-color: var(--harmadszin) !important;
   border-radius: 10px;
