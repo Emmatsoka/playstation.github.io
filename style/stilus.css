@@ -25,7 +25,7 @@ body{
   --oldalszin: #f3f3f3 ;
   --masodszin: rgb(202, 202, 202) ;
   --harmadszin: rgba(0, 0, 0, 0.927) ;
-  --negyedszin: rgb(40, 40, 40) ;
+  --negyedszin: rgba(40, 40, 40, 0.57) ;
   --gorgeto1: #3d3d3d ;
   --gorgeto2: #7c7c7c ;
   --gorgeto3: #626262 ;
@@ -43,7 +43,7 @@ body{
   --oldalszin: rgb(0, 0, 0) !important;
   --masodszin: rgb(54, 54, 54) !important;
   --harmadszin: rgba(228, 228, 228, 0.792) !important;
-  --negyedszin: rgb(227, 227, 227) !important;
+  --negyedszin: rgba(220, 220, 220, 0.789) !important;
   --gorgeto1: #ffffff !important;
   --gorgeto2: #7c7c7c !important;
   --gorgeto3: #626262 !important;
@@ -72,13 +72,16 @@ color:var(--oldalszin) !important;
 }
   
 #header{
-   
-    background-image: var(--hatter);
-    height: 104vh;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-
+  transition: background-image 0.5s ease-in-out;
+  background-image: var(--hatter);
+  height: 104vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: background-image 0.5s ease-in-out;
+  -moz-transition: background-image 0.5s ease-in-out;
+  -ms-transition: background-image 0.5s ease-in-out;
+  -o-transition: background-image 0.5s ease-in-out;
 }
 
   
@@ -563,7 +566,7 @@ footer ul li a:hover{
 #udvozoljuk{
   background: var(--negyedszin) !important;
   color: var(--oldalszin)  !important;
-  max-width: 500px;
+  max-width: 1280px;
   text-align: center;
   margin:0 auto !important;
   padding:5px !important;
