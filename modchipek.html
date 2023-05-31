@@ -108,86 +108,102 @@
                 <h3  class=" scrollFade" id="udvozoljuk">PlayStation - Modchipek</h3>
                 
                 <hr id="tartalomhr" class=" scrollFade">
+                <div class="row" id="tartalomrow">
+                  <div class="col-md" id="tartalomcol">
+                    <div class=" scrollFade center" >
+                      <span class="bold">Fedezd fel a PlayStation konzolok világát a modchipek segítségével!</span> 
+                      Ezek a speciális eszközök lehetővé teszik a konzolok módosítását és új funkciók hozzáadását. 
+                      A modchipek széles körű lehetőségeket kínálnak, hogy szabadabban testre szabd konzolodat, futtathass külső alkalmazásokat és élvezhesd az egyedi funkciókat. 
+                      Válassz a különböző típusok és változatok közül, hogy még jobban kiaknázhassd a PlayStation élményt.
+                      </div>
+                  </div>
+                </div>
             <div class="row" id="tartalomrow">
               <div class="col-md" id="tartalomcol">
 
-                <div class=" scrollFade" >
-                  Ezek egyszerű mikrochipek. Ezt gondolná bárki, aki nem ismeri az első PlayStationt.<br>
+                <div class="scrollFade">
+                  <span class="bold">Ezek egyszerű mikrochipek.</span> Ezt gondolná bárki, aki nem ismeri az első PlayStationt.<br>
                   De ezek nem egyszerű chipek, csak úgy néznek ki. Ezek képesek feltörni a konzol másolásvédelmét.<br>
-                  Egy PS1 modchip általában PIC12C508A chipre épül, de létezik Arduino ATmini alapú is.<br>
+                  Egy PS1 modchip általában <span class="bold">PIC12C508A chipre</span> épül, de létezik <span class="bold">Arduino ATmini</span> alapú is.<br>
                   Lentebb láthatnak képeket a chipekről, amikre épülnek a másolásvédelmet feltörő programok.<br><br>
-
-                  </div>
-                  <div class=" scrollFade center" >
-                    <a href="./images/PIC12C508A.png" target="_blank"><img src="./images/PIC12C508A.png" class="img-fluid kissebbkep"></a><br>
-                    <span class="bold">PIC12C508A mikrochip.</span><br><br>
-                  </div> 
-                  <div class=" scrollFade center" >
-                    <a href="./images/Arduino.png" target="_blank"><img src="./images/Arduino.png" class="img-fluid "></a><br>
-                    <span class="bold">Arduino ATmini.</span><br>
-                  </div> 
-                  <div class=" scrollFade"  >
-                    A modchipek átverik a PS1 processzorát azáltal, hogy beleinjektálják a konzol régiójának megfelelő kódot.<br>
-                    Így lehet importált játékokkal játszani, de CD-R lemezről is indulhat.<br>
-                  </div>
-                  <div class=" scrollFade"  >
-                    A modchipeknek több fajtájuk is van, mindegyiknek más vezetékelést igényel. Ez a konzol alaplapjától is függ.<br>
-                    Az első modchip a "The old crow" csapat által készített törőprogramot tartalmazta. Ez igen hatékony volt.<br>
-                    Viszont egy dolog miatt könnyen felfedezhető volt. Azért lehetett észrevenni, mert nem csendesen üzemelt.<br>
-                    Ez a chip akkor is folyamatosan injektálta a régiókódot a processzorba, amikor a játék elindult.<br><br>
-                  </div>
-                  <div class=" scrollFade center" >
-                    <a href="./images/Nemcsendesmodchip.jpg" target="_blank"><img src="./images/Nemcsendesmodchip.jpg" class="img-fluid "></a><br>
-                    <span class="bold">Ez a modchip nem csendesen működik.</span><br>
-                  </div> 
-           
-                  </div>
-
-                <div class="col-md" id="tartalomcol">
-    
-                  <div   class=" scrollFade" >
-                    De a konzol nem ellenőrzi a játék eredetiségét, miután az elindult, így nem szükséges játék közben is beleinjektálni.<br>
-                    A csendes működés hiányának az is hátránya, hogy mikrolaggokat okozhat játék közben.<br>
-                    Ezt nyilván nem szeretné senki.<br>
-                  </div>
-
-                  <div class=" scrollFade"  >
-                    Miután a SONY bevezetett egy "LibCrypt" nevű modchip érzékelőt a játékokba, a hackerek gyorsan reagáltak.<br>
-                    Nyilván ezzel is meg lehet küzdeni, ami sikerült is.<br> A hackerek a következő módszerhez folyamodtak.<br>
-                    Csendesen működő törőprogramokat írtak a chipekhez, így a játékok nem nagyon tudták észrevenni.<br>
-                    Így két legyet ütöttek egy csapásra, mivel a mikrolaggok problémáját is megszűntették.<br>
-                    Az új chipek 7 olykor 8 vezetéket igényeltek a csendes működés lehetővé tétele érdekében.<br><br>
-                  </div>
-                  <div class=" scrollFade center" >
-                    <a href="./images/Modchip.jpg" target="_blank"><img src="./images/Modchip.jpg" class="img-fluid "></a><br>
-                    <span class="bold">Így néz ki egy chipelt PS1. <br>Ez egy csendesen üzemelő modchip.</span><br>
-                  </div> 
-                  <div class=" scrollFade"  >
-                    A csendes chipek úgy működtek, hogy kétszer beleinjektálták a konzol processzorába a régiókódot.<br>
-                    Utána kikapcsolják magukat, hogy ne lehessen felderíteni őket.<br>
-                  </div>
-                  <div class=" scrollFade"  >
-                    A nem csendes modchipek folyamatosan küldték el a processzornak a régiókódot.<br>
-                    Ezáltal könnyen észrevehetővé vált jelenlétük, amit a szoftvercégek kihasználtak a hatékonyabb védelem érdekében.<br>
-                    A honlap nem tartalmaz chiptelepítési segédletet, viszont egy linket nyújt azoknak, akik szeretnék chipelni PS1-eiket.<br>
-                    A chipet vezetékek segítségével fel kell forrasztani az alaplapra.<br>
-                    Minden PS1 modellnél és chipnél más forrasztási pontok vannak.<br>
-                    PS1 chipelési segédlet angol nyelven.<br>
-                  </div>
-                  <div class=" scrollFade"  >
-                    És most a teljesség igénye nélkül lássanak néhány példát. Csak a PSNee alapul Arduinon, a többi mind PIC alapú:<br>
-                  </div>
-                  <div class=" scrollFade center" >
-                    The old crow<br>
-                    MM3 (Multi Mode 3)<br>
-                    Mayumi v4<br>
-                    ONEchip<br>
-                    Stealth<br>
-                    Stealth 2.8a<br>
-                    PSNee<br>
-                  </div>
-
                 </div>
+              
+                <div class="scrollFade center">
+                  <a href="./images/PIC12C508A.png" target="_blank"><img src="./images/PIC12C508A.png" class="img-fluid kissebbkep"></a><br>
+                  <span class="bold">PIC12C508A mikrochip.</span><br><br>
+                </div>
+              
+                <div class="scrollFade center">
+                  <a href="./images/Arduino.png" target="_blank"><img src="./images/Arduino.png" class="img-fluid "></a><br>
+                  <span class="bold">Arduino ATmini.</span><br>
+                </div>
+              
+                <div class="scrollFade">
+                  A modchipek átverik a PS1 processzorát azáltal, hogy beleinjektálják a konzol régiójának megfelelő kódot.<br>
+                  Így lehet importált játékokkal játszani, de CD-R lemezről is indulhat.<br><br>
+                </div>
+              
+                <div class="scrollFade">
+                  A modchipeknek több fajtájuk is van, mindegyiknek más vezetékelést igényel. Ez a konzol alaplapjától is függ.<br><br>
+                  Az első modchip a "The old crow" csapat által készített törőprogramot tartalmazta. Ez igen hatékony volt.<br>
+                  Viszont egy dolog miatt könnyen felfedezhető volt. Azért lehetett észrevenni, mert nem csendesen üzemelt.<br>
+                  Ez a chip akkor is folyamatosan injektálta a régiókódot a processzorba, amikor a játék elindult.<br><br>
+                </div>
+              
+                <div class="scrollFade center">
+                  <a href="./images/Nemcsendesmodchip.jpg" target="_blank"><img src="./images/Nemcsendesmodchip.jpg" class="img-fluid "></a><br>
+                  <span class="bold">Ez a modchip nem csendesen működik.</span><br>
+                </div>
+              </div>
+                <div class="col-md" id="tartalomcol">
+                <div class="scrollFade">
+                  De a konzol nem ellenőrzi a játék eredetiségét, miután az elindult, így nem szükséges játék közben is beleinjektálni.<br>
+                  A csendes működés hiányának az is hátránya, hogy mikrolaggokat okozhat játék közben.<br>
+                  Ezt nyilván nem szeretné senki.<br><br>
+                </div>
+              
+                <div class="scrollFade">
+                  Miután a SONY bevezetett egy "LibCrypt" nevű modchip érzékelőt a játékokba, a hackerek gyorsan reagáltak.<br>
+                  Nyilván ezzel is meg lehet küzdeni, ami sikerült is.<br> A hackerek a következő módszerhez folyamodtak.<br><br>
+                  Csendesen működő törőprogramokat írtak a chipekhez, így a játékok nem nagyon tudták észrevenni.<br>
+                  Így két legyet ütöttek egy csapásra, mivel a mikrolaggok problémáját is megszűntették.<br><br>
+                  Az új chipek 7 olykor 8 vezetéket igényeltek a csendes működés lehetővé tétele érdekében.<br><br>
+                </div>
+              
+                <div class="scrollFade center">
+                  <a href="./images/Modchip.jpg" target="_blank"><img src="./images/Modchip.jpg" class="img-fluid "></a><br>
+                  <span class="bold">Így néz ki egy chipelt PS1. <br>Ez egy csendesen üzemelő modchip.</span><br>
+                </div>
+              
+                <div class="scrollFade">
+                  A csendes chipek úgy működtek, hogy kétszer beleinjektálták a konzol processzorába a régiókódot.<br>
+                  Utána kikapcsolják magukat, hogy ne lehessen felderíteni őket.<br><br>
+                </div>
+              
+                <div class="scrollFade">
+                  A nem csendes modchipek folyamatosan küldték el a processzornak a régiókódot.<br>
+                  Ezáltal könnyen észrevehetővé vált jelenlétük, amit a szoftvercégek kihasználtak a hatékonyabb védelem érdekében.<br><br>
+                  A honlap nem tartalmaz chiptelepítési segédletet, viszont egy linket nyújt azoknak, akik szeretnék chipelni PS1-eiket.<br><br>
+                  A chipet vezetékek segítségével fel kell forrasztani az alaplapra.<br>
+                  Minden PS1 modellnél és chipnél más forrasztási pontok vannak.<br><br>
+                  PS1 chipelési segédlet angol nyelven.<br><br>
+                </div>
+              
+                <div class="scrollFade">
+                  És most a teljesség igénye nélkül lássanak néhány példát. Csak a PSNee alapul Arduinon, a többi mind PIC alapú:<br><br>
+                </div>
+              
+                <div class="scrollFade center">
+                  The old crow<br>
+                  MM3 (Multi Mode 3)<br>
+                  Mayumi v4<br>
+                  ONEchip<br>
+                  Stealth<br>
+                  Stealth 2.8a<br>
+                  PSNee<br>
+                </div>
+              </div>
+            
 
               </div>
 
