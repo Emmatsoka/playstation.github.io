@@ -950,3 +950,6 @@ nav{
 #also{
   margin-bottom: 0px !important;
 }
+#also ul li img{
+  cursor:pointer !important;
+}
