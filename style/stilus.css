@@ -42,6 +42,7 @@ body{
   --sotetebbbetu: rgb(211, 211, 211);
   --visszaatetejehez: rgba(5, 5, 5, 0.663);
   --visszaatetejehezhover: rgba(54, 54, 54, 0.663);
+  --border-radius: 15px;
 }
 .vilagos-tema{
   --sotetebbbetu: rgb(37, 37, 37);
@@ -62,8 +63,8 @@ body{
   --betoltoforgo: #2f2f2f;
   --betolto: #adadad;
   --navszin: #f3f3f3;
-  --visszaatetejehez: rgba(246, 246, 246, 0.663);
-  --visszaatetejehezhover: rgba(215, 215, 215, 0.663);
+  --visszaatetejehez: rgba(205, 205, 205, 0.789);
+  --visszaatetejehezhover: rgba(183, 183, 183, 0.663);
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
@@ -511,11 +512,11 @@ footer .col-md p{
 }
 #tartalomrow{
   max-width: 1300px !important;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: var(--border-radius) !important;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
 
 }
 #tartalomhr{
@@ -528,14 +529,14 @@ footer .col-md p{
 
 @media screen and (min-width: 765px) {
   #tartalomcol{
-    border-radius: 15px;
+    border-radius: var(--border-radius) !important;
     background-color: var(--tartalomcol)!important;
     padding: 20px !important;
     margin:10px !important;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    -webkit-border-radius: var(--border-radius) !important;
+    -moz-border-radius: var(--border-radius) !important;
+    -ms-border-radius: var(--border-radius) !important;
+    -o-border-radius: var(--border-radius) !important;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
 }
 }
@@ -585,7 +586,7 @@ footer ul li a:hover{
   -o-transition: 0.6s;
 }
 #udvozoljuk{
-  border-radius: 15px;
+  border-radius: var(--border-radius) !important;
   background: var(--negyedszin) !important;
   color: var(--oldalszin)  !important;
   max-width: 1280px;
@@ -596,10 +597,10 @@ footer ul li a:hover{
   padding-right: 15px !important;
   font-weight: 500 !important;
   font-family: zrnic !important;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
 }
 
@@ -658,11 +659,11 @@ nav{
 .img-fluid{
   z-index:669 !important;
   display: inline;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: var(--border-radius) !important;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
 }
 
 #idezetes{
@@ -682,11 +683,11 @@ nav{
 }
 .dropdown-menu{
   background-color: var(--harmadszin) !important;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: var(--border-radius) !important;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
   background-color: rgba(255, 255, 255, 0.875);
 }
 .dropdown-menu a{
@@ -859,7 +860,7 @@ nav{
 }
 
 #cimsor{
-  border-radius: 15px;
+  border-radius: var(--border-radius) !important;
   background: var(--negyedszin) !important;
   color: var(--oldalszin)  !important;
   max-width: 1280px;
@@ -870,10 +871,10 @@ nav{
   padding-right: 15px !important;
   font-weight: 500 !important;
   font-family: zrnic !important;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
 }
 
@@ -881,11 +882,11 @@ nav{
   background-color: var(--negyedszin);
   padding-top:30px !important;
   padding-bottom: 30px !important;
-  border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  border-radius: var(--border-radius) !important;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
   margin-bottom: 20px !important;
   margin-top: 20px !important;
 }
@@ -898,11 +899,11 @@ nav{
   .bold{
     background: var(--otodszin) !important;
     padding:8px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    border-radius: var(--border-radius) !important;
+    -webkit-border-radius: var(--border-radius) !important;
+    -moz-border-radius: var(--border-radius) !important;
+    -ms-border-radius: var(--border-radius) !important;
+    -o-border-radius: var(--border-radius) !important;
 
 }
 }
@@ -915,7 +916,7 @@ nav{
   
 }
 #visszaatetejehez{
-  border-radius: 15px;
+  border-radius: var(--border-radius) !important;
   background: var(--visszaatetejehez) !important;
   color: var(--oldalszin)  !important;
   min-width: 100% !important;
@@ -926,10 +927,10 @@ nav{
   padding-right: 15px !important;
   font-weight: 500 !important;
   font-family: zrnic !important;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
   border:none !important;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
   transition: 0.5s !important;
