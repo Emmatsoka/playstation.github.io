@@ -7,11 +7,12 @@
       <title>PlayStation - CD fajták</title>
       <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
       <script src="./bootstrap/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="./style/cdfajtak.css">
       <link rel="stylesheet" href="./style/stilus.css">
       <link rel="shortcut icon" href="./images/ps1logo.png" type="image/x-icon">
       <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <link rel="stylesheet" href="./style/style.scss">
+
       
       <meta name="description" content="Üdvözlünk a PlayStation 1 bemutató oldalán! Fedezd fel a retro játékkonzol varázslatos világát, ismerd meg a csodálatosan összeállított hardvert és élvezd a lenyűgöző játékélményt. Ismerkedj meg a PlayStation 1 ikonikus címekkel és fedezd fel, hogyan hozta forradalmi változásokat a videojáték-iparban. Merülj el a nosztalgia és a játékosság érzésében, amelyet csak a PlayStation 1 tud nyújtani.">
       <meta property="og:url" content="https://www.yauko.site/playstation.github.io/">
@@ -47,7 +48,7 @@
                   </li>
                   <li class="nav-item">
                     <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A PS1-ről</a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Továbbiak</a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="felepites.html">Felépítés</a>
                             <a class="dropdown-item" href="beuzemeles.html">Beüzemelés</a>
@@ -77,8 +78,8 @@
 
               <div class="row">
                 <div class="col-md-6 mozgo-kep" id="mozgo-kep">  
-                  <img src="./images/psonearnyek.png" alt="Átlátszó háttérű kép"  id="image">
-                  <img src="./images/PSOne.png" alt="Átlátszó háttérű kép" id="image1">
+                  <img src="./images/Mini_CD_arnyek.png" alt="Átlátszó háttérű kép"  id="kep1">
+                  <img src="./images/Mini_CD.png" alt="Átlátszó háttérű kép" id="kep2">
                 </div>
 
                   
@@ -86,10 +87,10 @@
                   <p >CD fajták</p>
                   <hr id="kezdohr">
                   <span id="idezetes">
-                    „blablabla‟
+                    „A PlayStation konzolokhoz készült CD-k különböző típusokat ölelnek fel, beleértve az audio, adat és PlayStation játéklemezeket is‟
                   </span>
                   <br>
-                  <a href="#asd"><button id="gomb">Mutass többet</button></a>           
+                  <a href="#egesztartalom"><button id="gomb">Mutass többet</button></a>           
                   <a href="soundscope.html"><button id="gomb">Soundscope</button></a> 
                 </div>
               </div>
@@ -98,7 +99,7 @@
   </div>
 
     
-    <section id="asd">
+    <section id="egesztartalom">
         <div id="tartalom">
           <div id="ize">
             <div id="tartalomszoveg">
@@ -120,11 +121,12 @@
                       </div>
                   </div>
                 </div>
+            <span id="rowteteje"></span>
             <div class="row" id="tartalomrow">
               <div class="col-md" id="tartalomcol">
 
                 <div class=" scrollFade" >
-                  A PS1-ben CD olvasó van. Ez azt jelenti, hogy csak CD lemezt képes beolvasni.<br>
+                  A PS1-ben CD olvasó van. Ez azt jelenti, hogy csak CD lemezt képes beolvasni.<br><br>
                   Ennek értelmében se a DVD, se a BD (Blu-ray Disc) lemezeket nem képes olvasni.<br>
                   Azokhoz kisebb hullámhosszú lézerre van szükség.<br><br>
                   </div>
@@ -151,13 +153,13 @@
                   <h3  class=" scrollFade" id="cimsor">A préselt CD-k</h3><br>
                   <div class=" scrollFade"  >
                     A préselt CD-ken előre létrehozott adatok vannak, melyeket nem lehet felülírni.<br>
-                    Ismerős a szürke hátlapról. Ez a fajta CD veri vissza a legtöbb fényt.<br>
-                    A CD gyártásnak komoly költségei vannak, ezért az írható CD lemezeknél drágábbak.<br><br>
+                    Ismerős a szürke hátlapról. Ez a fajta CD veri vissza a legtöbb fényt.<br><br>
+                    A CD gyártásnak komoly költségei vannak, ezért az írható CD lemezeknél drágábbak.<br>
 
                   </div>
-                  <div class=" scrollFade center" >
-                    <a href="./images/Pressed_CD.png" target="_blank"><img src="./images/Pressed_CD.png" class="img-fluid "></a><br>
-                    <span class="bold">Préselt CD</span><br><br>
+                  <div class=" scrollFade center" id="kephatter">
+                    <a href="./images/Pressed_CD.png" target="_blank"><img src="./images/Pressed_CD.png" class="img-fluid " alt="" title="Kattints rám a teljes képhez"></a><br>
+                    <span class="bold">Préselt CD</span><br>
                   </div> 
                   <div class=" scrollFade"  >
                     Ezek a lemezek több rétegből állnak.<br>
@@ -167,38 +169,61 @@
                   <div class=" scrollFade"  >
                     Az írható CD-k egy alumínium réteget, és egy adatrögzítő anyagot használnak, ami ciánból készül.<br>
                     Ez a réteg a legfelső címke alatt és a polikarbonát felett van.<br>
-                    Nagyjából 10%-kal kevesebb fényt ver vissza a préselt CD-knél.<br>
+                    Nagyjából 10%-kal kevesebb fényt ver vissza a préselt CD-knél.<br><br>
                   </div>
                   <div class=" scrollFade"  >
                     A CD-R lemezeknek inkább zöldes színű hátlapja van, bár létezik kék AZO réteges is.<br>
                     Ez utóbbi réteg a Verbatim szabadalma.<br>
                   </div>
                   <div class=" scrollFade"  >
-                    A kapacitásuk 700 MB ami audio módban 80 perc. Bár az első CD-R lemezeknél ez 650 MB és 74 perc volt.<br><br>
+                    A kapacitásuk 700 MB ami audio módban 80 perc. Bár az első CD-R lemezeknél ez 650 MB és 74 perc volt.<br>
                   </div>
-                  <div class=" scrollFade center" >
-                    <a href="./images/CD-R.png" target="_blank"><img src="./images/CD-R.png" class="img-fluid "></a><br>
-                    <span class="bold">CD-R</span><br><br>
-                  </div> 
-                  <div class=" scrollFade"  >
-                 
-                  </div>
-                  <div class=" scrollFade"  >
-                 
-                  </div>
-                  <div class=" scrollFade"  >
-                 
-                  </div>
+                  <a href="#rowteteje"  class="d-none d-md-block"><button id="visszaatetejehez">Görgess fel</button></a> 
                   </div>
 
                 <div class="col-md" id="tartalomcol">
-                  <div class=" scrollFade center" >
-                    <a href="./images/ps1rajt.png" target="_blank"><img src="" class="img-fluid "></a>
+                  <div class=" scrollFade center" id="kephatter">
+                    <a href="./images/CD-R.png" target="_blank"><img src="./images/CD-R.png" class="img-fluid " alt="" title="Kattints rám a teljes képhez"></a><br>
+                    <span class="bold">CD-R</span><br>
                   </div> 
-                  <div   class=" scrollFade" >
-
+                  <div class=" scrollFade"  >
+                    Az optikai meghajtóban a lézer fénye íráskor felerősödik, kvázi beleégeti az információkat az adatrétegbe.<br>
+                    Ezért angolul úgy nevezik ezt a jelenséget, hogy "CD burning".<br><br>
                   </div>
-
+                  <div class=" scrollFade"  >
+                    CD íráskor a lézer fénye jelentősen erősebb, mint olvasáskor.<br>
+                    A lézer az adatréteg fényvisszaverési tulajdonságát változtatja meg.<br><br>
+                  </div>
+                  <h3  class=" scrollFade" id="cimsor">Az újraírható CD-k</h3><br>
+                  <div class=" scrollFade"  >
+                    A CD-RW hasonló módon működik, de merőben más anyagból készül mint a CD-R.<br>
+                  </div>
+                  <div class=" scrollFade center" id="kephatter">
+                    <a href="./images/CD-RW.png" target="_blank"><img src="./images/CD-RW.png" class="img-fluid " alt="" title="Kattints rám a teljes képhez"></a><br>
+                    <span class="bold">CD-RW</span><br>
+                  </div> 
+                  <div class=" scrollFade"  >
+                    A CD-RW ciánréteg helyett fémötvözetből készül, ami újraírható tulajdonságot ad a lemezhez.<br>
+                    Ez a lemezfajta 600 Celsius-fokot igényel az adatok beleégetéséhez.<br>
+                    És 200 Celsius-fokot igényel a réteg eredeti állapotba történő visszaállításához.<br><br>
+                  </div>
+                  <div class=" scrollFade"  >
+                    A CD-RW nagyjából 20%-kal kevesebb fényt ver vissza mint a CD-R ezért nehezebb az olvasása.<br><br>
+                    Létezik olyan is, hogy mini CD. Ennek 8 cm átmérője van, és csak 210 MB adat fér fel rá. Ez 24 perc zenét jelent.<br>
+                  </div>
+                  <div class=" scrollFade center" id="kephatter">
+                    <a href="./images/Mini_CD.png" target="_blank"><img src="./images/Mini_CD.png" class="img-fluid " alt="" title="Kattints rám a teljes képhez"></a><br>
+                    <span class="bold">CD-RW</span><br>
+                  </div> 
+                  <div class=" scrollFade"  >
+                    Ezen felül megegyezik egy hagyományos CD-vel. Ennek DVD változata is van, ami 1,46 GB adatot képes tárolni.<br>
+                    Viszonyításképpen egy hagyományos DVD 4,7 GB adat vagy 120 perc videó tárolására képes.<br><br>
+                    Ilyen fajtái vannak a CD lemezeknek.<br>
+                  </div>
+                  <div class=" scrollFade"  >
+                    PS1 játékok kiírásához ajánlott CD-R lemezt választani.<br>
+                    Modern optikai meghajtóknál 16x és a 24x írási sebességgel írni.<br>
+                  </div>
             
 
                 </div>
@@ -219,11 +244,11 @@
           <h4>Rólunk</h4>
           <p>Még nincs semmi adat</p>
           <ul id="kapcsolat">
-            <li><img src="./images/github.png" alt=""></li>
-            <li><img src="./images/facebook.png" alt=""></li>
-            <li><img src="./images/youtube.png" alt=""></li>
-            <li><img src="./images/reddit.png" alt=""></li>
-            <li><img src="./images/discord.png" alt=""></li>
+              <li><img src="./images/github.png" alt="" ></li>
+            <li><img src="./images/facebook.png" alt="" ></li>
+            <li><img src="./images/youtube.png" alt="" ></li>
+            <li><img src="./images/reddit.png" alt="" ></li>
+            <li><img src="./images/discord.png" alt="" ></li>
           </ul>
         </div>
         <div class="col-md feher">

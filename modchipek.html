@@ -47,7 +47,7 @@
                   </li>
                   <li class="nav-item">
                     <li class="nav-item dropdown ">
-                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">A PS1-ről</a>
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Továbbiak</a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
                             <a class="dropdown-item" href="felepites.html">Felépítés</a>
                             <a class="dropdown-item" href="beuzemeles.html">Beüzemelés</a>
@@ -89,7 +89,7 @@
                     „A PlayStation 1 forradalmi titkai, melyek átírják a játék szabályait és kibontakoztatják a konzol rejtett potenciálját.‟
                   </span>
                   <br>
-                  <a href="#asd"><button id="gomb">Mutass többet</button></a>           
+                  <a href="#egesztartalom"><button id="gomb">Mutass többet</button></a>           
                   <a href="palvsntsc.html"><button id="gomb">PAL vs NTSC</button></a> 
                 </div>
               </div>
@@ -98,7 +98,7 @@
   </div>
 
     
-    <section id="asd">
+    <section id="egesztartalom">
         <div id="tartalom">
           <div id="ize">
             <div id="tartalomszoveg">
@@ -120,6 +120,7 @@
                       </div>
                   </div>
                 </div>
+            <span id="rowteteje"></span>
             <div class="row" id="tartalomrow">
               <div class="col-md" id="tartalomcol">
 
@@ -127,17 +128,17 @@
                   <span class="bold">Ezek egyszerű mikrochipek.</span> Ezt gondolná bárki, aki nem ismeri az első PlayStationt.<br>
                   De ezek nem egyszerű chipek, csak úgy néznek ki. Ezek képesek feltörni a konzol másolásvédelmét.<br>
                   Egy PS1 modchip általában <span class="bold">PIC12C508A chipre</span> épül, de létezik <span class="bold">Arduino ATmini</span> alapú is.<br>
-                  Lentebb láthatnak képeket a chipekről, amikre épülnek a másolásvédelmet feltörő programok.<br><br>
+                  Lentebb láthatnak képeket a chipekről, amikre épülnek a másolásvédelmet feltörő programok.<br>
                 </div>
               
-                <div class="scrollFade center">
-                  <a href="./images/PIC12C508A.png" target="_blank"><img src="./images/PIC12C508A.png" class="img-fluid kissebbkep"></a><br>
-                  <span class="bold">PIC12C508A mikrochip.</span><br><br>
+                <div class="scrollFade center" id="kephatter">
+                  <a href="./images/PIC12C508A.png" target="_blank"><img src="./images/PIC12C508A.png" class="img-fluid kissebbkep" alt="" title="Kattints rám a teljes képhez"></a><br>
+                  <span class="bold">PIC12C508A mikrochip.</span><br>
                 </div>
               
-                <div class="scrollFade center">
-                  <a href="./images/Arduino.png" target="_blank"><img src="./images/Arduino.png" class="img-fluid "></a><br>
-                  <span class="bold">Arduino ATmini.</span><br><br>
+                <div class="scrollFade center" id="kephatter">
+                  <a href="./images/Arduino.png" target="_blank"><img src="./images/Arduino.png" class="img-fluid " alt="" title="Kattints rám a teljes képhez"></a><br>
+                  <span class="bold">Arduino ATmini.</span><br>
                 </div>
               
                 <div class="scrollFade">
@@ -149,13 +150,14 @@
                   A modchipeknek <span class="bold">több fajtájuk is van</span>, mindegyiknek más vezetékelést igényel. Ez a konzol alaplapjától is függ.<br><br>
                   Az első modchip a <span class="bold">"The old crow"</span> csapat által készített törőprogramot tartalmazta. Ez igen hatékony volt.<br>
                   Viszont egy dolog miatt könnyen felfedezhető volt. Azért lehetett észrevenni, mert nem csendesen üzemelt.<br>
-                  Ez a chip akkor is folyamatosan injektálta a régiókódot a processzorba, amikor a játék elindult.<br><br>
+                  Ez a chip akkor is folyamatosan injektálta a régiókódot a processzorba, amikor a játék elindult.<br>
                 </div>
               
-                <div class="scrollFade center">
-                  <a href="./images/Nemcsendesmodchip.jpg" target="_blank"><img src="./images/Nemcsendesmodchip.jpg" class="img-fluid "></a><br>
-                  <span class="bold">Ez a modchip nem csendesen működik.</span><br><br>
+                <div class="scrollFade center" id="kephatter">
+                  <a href="./images/Nemcsendesmodchip.jpg" target="_blank"><img src="./images/Nemcsendesmodchip.jpg" class="img-fluid " alt="" title="Kattints rám a teljes képhez"></a><br>
+                  <span class="bold">Ez a modchip nem csendesen működik.</span><br>
                 </div>
+                <a href="#rowteteje"  class="d-none d-md-block"><button id="visszaatetejehez">Görgess fel</button></a> 
               </div>
                 <div class="col-md" id="tartalomcol">
                 <div class="scrollFade">
@@ -172,9 +174,9 @@
                   Az új chipek 7 olykor 8 vezetéket igényeltek a csendes működés lehetővé tétele érdekében.<br><br>
                 </div>
               
-                <div class="scrollFade center">
-                  <a href="./images/Modchip.jpg" target="_blank"><img src="./images/Modchip.jpg" class="img-fluid "></a><br>
-                  <span class="bold">Így néz ki egy chipelt PS1. <br>Ez egy csendesen üzemelő modchip.</span><br><br>
+                <div class="scrollFade center" id="kephatter">
+                  <a href="./images/Modchip.jpg" target="_blank"><img src="./images/Modchip.jpg" class="img-fluid " alt="" title="Kattints rám a teljes képhez"></a><br>
+                  <span class="bold">Így néz ki egy chipelt PS1.</span> <br> <span class="bold">Ez egy csendesen üzemelő modchip.</span><br>
                 </div>
               
                 <div class="scrollFade">
@@ -223,11 +225,11 @@
           <h4>Rólunk</h4>
           <p>Még nincs semmi adat</p>
           <ul id="kapcsolat">
-            <li><img src="./images/github.png" alt=""></li>
-            <li><img src="./images/facebook.png" alt=""></li>
-            <li><img src="./images/youtube.png" alt=""></li>
-            <li><img src="./images/reddit.png" alt=""></li>
-            <li><img src="./images/discord.png" alt=""></li>
+              <li><img src="./images/github.png" alt="" ></li>
+            <li><img src="./images/facebook.png" alt="" ></li>
+            <li><img src="./images/youtube.png" alt="" ></li>
+            <li><img src="./images/reddit.png" alt="" ></li>
+            <li><img src="./images/discord.png" alt="" ></li>
           </ul>
         </div>
         <div class="col-md feher">
