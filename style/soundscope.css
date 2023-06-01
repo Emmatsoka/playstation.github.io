@@ -21,14 +21,19 @@
 
 
 #kep2 {
-    max-width: 75% !important;
-    max-height: 75% !important;
-    position: absolute;
-    margin-top: -10px !important;
-    margin-left: 100px !important;
-    top: 45%;
-    transition: transform 0.2s ease-out;
-    opacity: 0;
-    animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
-    -webkit-animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
+  border-radius: 10px;
+  max-width: 75% !important;
+  max-height: 75% !important;
+  position: absolute;
+  margin-top: -10px !important;
+  margin-left: 100px !important;
+  top: 45%;
+  transition: transform 0.2s ease-out;
+  opacity: 0;
+  animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
+  -webkit-animation: slide-in 2.0s ease-in-out forwards, lebeges 6s ease-in-out infinite;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
