@@ -23,7 +23,7 @@ body{
 
 :root{
   --oldalszin: #f3f3f3 ;
-  --masodszin: rgb(202, 202, 202) ;
+  --masodszin: #a3abdb ;
   --harmadszin: rgba(0, 0, 0, 0.927) ;
   --negyedszin: rgba(40, 40, 40, 0.285) ;
   --otodszin: rgba(51, 51, 51, 0.285);
@@ -41,8 +41,10 @@ body{
   --navszin: black;
   --sotetebbbetu: rgb(211, 211, 211);
   --visszaatetejehez: rgba(5, 5, 5, 0.663);
-  --visszaatetejehezhover: rgba(54, 54, 54, 0.663);
+  --visszaatetejehezhover: rgba(83, 83, 83, 0.663);
   --border-radius: 15px;
+  --bold-color:#878787;
+  --gombhover: black;
 }
 .vilagos-tema{
   --sotetebbbetu: rgb(37, 37, 37);
@@ -64,7 +66,9 @@ body{
   --betolto: #adadad;
   --navszin: #f3f3f3;
   --visszaatetejehez: rgba(205, 205, 205, 0.789);
-  --visszaatetejehezhover: rgba(183, 183, 183, 0.663);
+  --visszaatetejehezhover: rgba(160, 160, 160, 0.663);
+  --bold-color:#393939;
+  --gombhover: white;
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
@@ -147,9 +151,12 @@ color:var(--oldalszin) !important;
 }
 @keyframes lebeges {
 	0% {
-	
 		transform: translatey(0px);
-	}
+		-webkit-transform: translatey(0px);
+		-moz-transform: translatey(0px);
+		-ms-transform: translatey(0px);
+		-o-transform: translatey(0px);
+}
 	50% {
 
 		transform: translatey(-15px);
@@ -159,9 +166,12 @@ color:var(--oldalszin) !important;
 		-o-transform: translatey(-15px);
 }
 	100% {
-	
 		transform: translatey(0px);
-	}
+		-webkit-transform: translatey(0px);
+		-moz-transform: translatey(0px);
+		-ms-transform: translatey(0px);
+		-o-transform: translatey(0px);
+}
 }
   @keyframes attunes {
     0% {
@@ -235,8 +245,8 @@ color:var(--oldalszin) !important;
 }
   #gomb{
     z-index: 500;
-    transition: 0.4s all;
-    background-color: black;
+    transition: 0.4s !important;
+    background: linear-gradient(to right, black, rgb(14, 14, 14));
     color:#f3f3f3;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -249,26 +259,28 @@ color:var(--oldalszin) !important;
     -o-border-radius: 30px;
     font-size: 1.1vw;
     border:none;
-    -webkit-transition: 0.4s all;
-    -moz-transition: 0.4s all;
-    -ms-transition: 0.4s all;
-    -o-transition: 0.4s all;
+    -webkit-transition: 0.4s !important;
+    -moz-transition: 0.4s !important;
+    -ms-transition: 0.4s !important;
+    -o-transition: 0.4s !important;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.462);
     animation: attunes 1.4s ease-in-out forwards;
     -webkit-animation: attunes 1.4s ease-in-out forwards;
 }
 #gomb:hover{
-    transition: 0.4s all;
-    background-color: rgb(117, 117, 117);
-    padding-top: 12.5px;
-    padding-bottom: 12.5px;
-    padding-left: 17.5px;
-    padding-right: 17.5px;
-    transform: translateY(-4px);
-    -webkit-transform: translateY(-4px);
-    -moz-transform: translateY(-4px);
-    -ms-transform: translateY(-4px);
-    -o-transform: translateY(-4px);
+  color: var(--gombhover);
+  transition: 0.4s !important;
+  background: rgb(117, 117, 117);
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+  padding-left: 17.5px;
+  padding-right: 17.5px;
+  transform: translateY(-4px);
+  -webkit-transform: translateY(-4px);
+  -moz-transform: translateY(-4px);
+  -ms-transform: translateY(-4px);
+  -o-transform: translateY(-4px);
+
 }
 
 .navbar-brand{
@@ -413,6 +425,7 @@ hr{
 }
 .bold{
   font-weight: 550;
+  color:var(--bold-color);
 }
 footer{
   background-color: black;
@@ -897,6 +910,7 @@ nav{
 #kephatter{
   
   .bold{
+    color: var(--oldalszin) !important;
     background: var(--otodszin) !important;
     padding:8px;
     border-radius: var(--border-radius) !important;
@@ -953,4 +967,7 @@ nav{
 }
 #also ul li img{
   cursor:pointer !important;
+}
+.dropdown-menu .active{
+  background-color: #62626255 !important;
 }
