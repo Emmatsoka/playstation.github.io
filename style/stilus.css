@@ -11,6 +11,7 @@
 html{
   scroll-behavior: smooth;
   
+  
 }
 *{
 
@@ -19,6 +20,7 @@ html{
 
 body{
   background-color: var(--harmadszin);
+
 }
 
 :root{
@@ -45,7 +47,16 @@ body{
   --border-radius: 15px;
   --bold-color:#878787;
   --gombhover: black;
+  --headerszoveg: clamp(1.1875rem, 1.1512rem + 0.2907vw, 1.5rem);
+  --headercim:  clamp(1.625rem, 1.5814rem + 0.3488vw, 2rem);
+  --gombszoveg: clamp(1.0625rem, 1.048rem + 0.1163vw, 1.1875rem);
+  --szoveg: clamp(1.1875rem, 1.1512rem + 0.2907vw, 1.5rem);
+  --navbarszoveg:  clamp(1.1875rem, 1.1657rem + 0.1744vw, 1.375rem);
+  --cim: clamp(1.625rem, 1.5814rem + 0.3488vw, 2rem);
+  --footerszoveg: clamp(1.0625rem, 1.0262rem + 0.2907vw, 1.375rem);
+  --navbarcim: clamp(1.5625rem, 1.5407rem + 0.1744vw, 1.75rem);
 }
+
 .vilagos-tema{
   --sotetebbbetu: rgb(37, 37, 37);
   --oldalszin: rgb(0, 0, 0) !important;
@@ -231,14 +242,14 @@ color:var(--oldalszin) !important;
   #ps1szoveg{
     text-align: center;
     margin-top: 30vh;
-    font-size: 1.9vw;
+    font-size: var(--headercim);
     font-weight: 660;
     animation: attunes 1.2s ease-in-out forwards;
     -webkit-animation: attunes 1.2s ease-in-out forwards;
 }
 #ps1szoveg span{
     display: inline-block !important;
-    font-size: 1.3vw;
+    font-size: var(--headerszoveg);
     font-weight: 300;
     margin-bottom: 10px;
     font-style: italic;
@@ -257,7 +268,7 @@ color:var(--oldalszin) !important;
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    font-size: 1.1vw;
+    font-size: var(--gombszoveg);
     border:none;
     -webkit-transition: 0.4s !important;
     -moz-transition: 0.4s !important;
@@ -285,7 +296,7 @@ color:var(--oldalszin) !important;
 
 .navbar-brand{
     font-weight: 700;
-    font-size: 1.7vw;
+    font-size: var(--navbarcim);
     font-family:
      psbetu;
     color:var(--oldalszin)  !important;
@@ -303,20 +314,20 @@ color:var(--oldalszin) !important;
  
 }
 #navbarText{
-    font-size: 1.15vw;
+    font-size: var(--navbarszoveg) ;
     font-weight: 600;
 
 }
 @media screen and (max-width: 1160px) {
   #gomb{
-    font-size: 15px;
+    font-size: var(--gombszoveg);
   }
   #ps1szoveg span{
-    font-size: 18px;
+    font-size: var(--headerszoveg);
     max-width: 300px;
   }
   #ps1szoveg p{
-    font-size: 22px;
+    font-size: var(--headercim);
   }
   #ps1szoveg{
     padding: 0;
@@ -326,7 +337,7 @@ color:var(--oldalszin) !important;
     font-size: 22px;
   }
   #navbarText, .nav-item, .nav-link{
-    font-size:22px !important;
+    font-size: var(--navbarszoveg) !important;
   }
 }
 .nav-link{
@@ -524,6 +535,7 @@ footer .col-md p{
   padding-bottom:120px;
 }
 #tartalomrow{
+  font-size: var(--szoveg);
   max-width: 1300px !important;
   border-radius: var(--border-radius) !important;
   -webkit-border-radius: var(--border-radius) !important;
@@ -604,6 +616,7 @@ footer ul li a:hover{
   color: var(--oldalszin)  !important;
   max-width: 1280px;
   text-align: center;
+  font-size: var(--cim);
   margin:0 auto !important;
   padding:10px !important;
   padding-left: 15px !important;
@@ -964,6 +977,7 @@ nav{
 
 #also{
   margin-bottom: 0px !important;
+  font-size: var(--footerszoveg);
 }
 #also ul li img{
   cursor:pointer !important;
