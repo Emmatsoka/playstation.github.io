@@ -10,7 +10,7 @@
 }
 html{
   scroll-behavior: smooth;
-  
+
   
 }
 *{
@@ -25,7 +25,7 @@ body{
 
 :root{
   --oldalszin: #f3f3f3 ;
-  --masodszin: #a3abdb ;
+  --masodszin: #626b9e ;
   --harmadszin: rgba(0, 0, 0, 0.927) ;
   --negyedszin: rgba(40, 40, 40, 0.285) ;
   --otodszin: rgba(51, 51, 51, 0.285);
@@ -33,17 +33,16 @@ body{
   --gorgeto2: #7c7c7c ;
   --gorgeto3: #626262 ;
   --hatter: url('../images/kekhatter.png');
-  --hr: rgba(220, 220, 220, 0.404);
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.875)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   --tartalomcol: #0000005c;
   --dropdownhovera: rgb(224, 224, 224);
   --dropdownhover: rgba(50, 50, 50, 0.749);
-  --betoltoforgo: #303052;
+  --betoltoforgo: #626b9e ;
   --betolto: #f3f3f3;
   --navszin: black;
   --sotetebbbetu: rgb(211, 211, 211);
   --visszaatetejehez: rgba(5, 5, 5, 0.663);
-  --visszaatetejehezhover: rgba(83, 83, 83, 0.663);
+  --visszaatetejehezhover: rgb(117, 117, 117);
   --border-radius: 15px;
   --bold-color:#878787;
   --gombhover: black;
@@ -53,31 +52,34 @@ body{
   --szoveg: clamp(1.1875rem, 1.1512rem + 0.2907vw, 1.5rem);
   --navbarszoveg:  clamp(1.1875rem, 1.1657rem + 0.1744vw, 1.375rem);
   --cim: clamp(1.625rem, 1.5814rem + 0.3488vw, 2rem);
-  --footerszoveg:  clamp(1.0625rem, 1.0262rem + 0.2907vw, 1.375rem);
-  --navbarcim: clamp(1.5625rem, 1.5407rem + 0.1744vw, 1.75rem);
+  --footerszoveg: clamp(1.0625rem, 1.0407rem + 0.1744vw, 1.25rem);
+  --navbarcim: clamp(1.4375rem, 1.4012rem + 0.2907vw, 1.75rem);
+  --visszaatetejehezszin: #f3f3f3;
+  --visszaatetejehezhoverszin: rgb(0, 0, 0);
 }
 
 .vilagos-tema{
   --sotetebbbetu: rgb(37, 37, 37);
   --oldalszin: rgb(0, 0, 0) !important;
-  --masodszin: rgb(54, 54, 54) !important;
+  --masodszin: #4f546e ;
   --harmadszin: rgba(228, 228, 228, 0.792) !important;
   --negyedszin: rgba(205, 205, 205, 0.789) !important;
   --otodszin: rgba(229, 229, 229, 0.789) !important;
-  --gorgeto1: #ffffff !important;
+  --gorgeto1: #f3f3f3 !important;
   --gorgeto2: #7c7c7c !important;
   --gorgeto3: #626262 !important;
   --hatter: url('../images/feherhatter.png');
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.951)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-  --hr: rgb(49, 49, 49);
   --tartalomcol: #ffffff5c;
   --dropdownhover: rgb(191, 191, 191);
   --dropdownhovera: rgba(50, 50, 50, 0.749);
   --betoltoforgo: #2f2f2f;
   --betolto: #adadad;
   --navszin: #f3f3f3;
-  --visszaatetejehez: rgba(205, 205, 205, 0.789);
-  --visszaatetejehezhover: rgba(160, 160, 160, 0.663);
+  --visszaatetejehez: rgb(0, 0, 0);
+  --visszaatetejehezszin: #f3f3f3;
+  --visszaatetejehezhover: rgb(117, 117, 117);
+  --visszaatetejehezhoverszin: #f3f3f3;
   --bold-color:#393939;
   --gombhover: white;
   transition: 0.6s !important;
@@ -441,7 +443,7 @@ hr{
 }
 .bold{
   font-weight: 550;
-  color:var(--bold-color);
+  color:var(--masodszin);
 }
 footer{
   background-color: black;
@@ -570,12 +572,35 @@ footer .col-md p{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
 }
 }
+#udvozoljuk{
+  border-radius: var(--border-radius) !important;
+  background: var(--negyedszin) !important;
+  color: var(--oldalszin)  !important;
+  max-width: 1280px;
+  text-align: center;
+  font-size: var(--cim);
+  margin:0 auto !important;
+  margin-bottom: 10px !important;
+  padding:10px !important;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+  font-weight: 500 !important;
+  font-family: zrnic !important;
+  -webkit-border-radius: var(--border-radius) !important;
+  -moz-border-radius: var(--border-radius) !important;
+  -ms-border-radius: var(--border-radius) !important;
+  -o-border-radius: var(--border-radius) !important;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
+}
 @media screen and (max-width: 765px) {
   #tartalomrow{
     background-color: var(--tartalomcol)!important;
     padding: 20px !important;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
     margin-bottom:20px !important; 
+    }
+    #udvozoljuk{
+      margin-bottom: 20px !important;
     }
 }
 #eloszo{
@@ -615,25 +640,7 @@ footer ul li a:hover{
   -ms-transition: 0.6s;
   -o-transition: 0.6s;
 }
-#udvozoljuk{
-  border-radius: var(--border-radius) !important;
-  background: var(--negyedszin) !important;
-  color: var(--oldalszin)  !important;
-  max-width: 1280px;
-  text-align: center;
-  font-size: var(--cim);
-  margin:0 auto !important;
-  padding:10px !important;
-  padding-left: 15px !important;
-  padding-right: 15px !important;
-  font-weight: 500 !important;
-  font-family: zrnic !important;
-  -webkit-border-radius: var(--border-radius) !important;
-  -moz-border-radius: var(--border-radius) !important;
-  -ms-border-radius: var(--border-radius) !important;
-  -o-border-radius: var(--border-radius) !important;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
-}
+
 
 #mozgo-kep{
   transition: transform 0.4s ease-out;
@@ -665,9 +672,9 @@ footer ul li a:hover{
   text-align: center;
 }
 nav{
-  background-color: #1010100d !important;
-  backdrop-filter: blur(10px);
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.167);
+  background: linear-gradient(to bottom, #10101063, rgba(0, 0, 0, 0)) !important;
+  backdrop-filter: blur(5px);
+
 }
 .nav-link{
   float: none !important;
@@ -698,7 +705,7 @@ nav{
 }
 
 #idezetes{
-  max-width: 500px;
+  max-width: 600px;
   margin:0 auto;
  
 }
@@ -823,16 +830,16 @@ nav{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.6s;
+  transition: 0.6s ease-out;
   z-index: 1;
-  width: 80px;
-  height: 80px;
-  border: 8px solid var(--betolto);
-  border-radius: 50%;
-  border-top: 8px solid var(--betoltoforgo);
-  animation: spin 1s linear infinite;
-  margin-top: -44px; /* Az elem magasságának felének negatív margin */
-  margin-left: -44px; 
+  animation: spin 1s ease-in-out infinite;
+  margin-top: -44px;
+  margin-left: -44px;
+  -webkit-animation: spin 1s ease-in-out infinite;
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  -ms-transition: 0.6s ease-out;
+  -o-transition: 0.6s ease-out;
 }
 
 @keyframes spin {
@@ -857,11 +864,11 @@ nav{
 }
 #egesz.aktiv {
   opacity:1;
-  transition: 0.7s !important;
-  -webkit-transition: 0.7s !important;
-  -moz-transition: 0.7s !important;
-  -ms-transition: 0.7s !important;
-  -o-transition: 0.7s !important;
+  transition: 1s ease-in !important;
+  -webkit-transition: 1s ease-in !important;
+  -moz-transition: 1s ease-in !important;
+  -ms-transition: 1s ease-in !important;
+  -o-transition: 1s ease-in !important;
 }
 #betolto.eltunes{
   opacity:0;
@@ -928,8 +935,8 @@ nav{
 #kephatter{
   
   .bold{
-    color: var(--oldalszin) !important;
-    background: var(--otodszin) !important;
+    color: var(--masodszin) !important;
+
     padding:8px;
     border-radius: var(--border-radius) !important;
     -webkit-border-radius: var(--border-radius) !important;
@@ -948,9 +955,9 @@ nav{
   
 }
 #visszaatetejehez{
-  border-radius: var(--border-radius) !important;
+  border-radius: 30px!important;
   background: var(--visszaatetejehez) !important;
-  color: var(--oldalszin)  !important;
+  color: var(--visszaatetejehezszin)  !important;
   min-width: 100% !important;
   text-align: center;
   margin:0 auto !important;
@@ -959,10 +966,10 @@ nav{
   padding-right: 15px !important;
   font-weight: 500 !important;
   font-family: zrnic !important;
-  -webkit-border-radius: var(--border-radius) !important;
-  -moz-border-radius: var(--border-radius) !important;
-  -ms-border-radius: var(--border-radius) !important;
-  -o-border-radius: var(--border-radius) !important;
+  -webkit-border-radius: 30px!important;
+  -moz-border-radius: 30px!important;
+  -ms-border-radius: 30px!important;
+  -o-border-radius: 30px!important;
   border:none !important;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
   transition: 0.5s !important;
@@ -972,6 +979,7 @@ nav{
   -o-transition: 0.5s !important;
 }
 #visszaatetejehez:hover{
+  color: var(--visszaatetejehezhoverszin) !important;
   background: var(--visszaatetejehezhover) !important;
   transition: 0.5s !important;
   -webkit-transition: 0.5s !important;

@@ -69,7 +69,7 @@ function temavaltas() {
 }
 
 function betoltes(){
-	myVar = setTimeout(oldalmutat, 500);
+	myVar = setTimeout(oldalmutat, 600);
 }
 
 
