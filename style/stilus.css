@@ -26,7 +26,7 @@ body{
 :root{
   --oldalszin: #f3f3f3 ;
   --masodszin: #626b9e ;
-  --harmadszin: rgba(0, 0, 0, 0.927) ;
+  --harmadszin: rgba(0, 0, 0, 0.962) ;
   --negyedszin: rgba(40, 40, 40, 0.285) ;
   --otodszin: rgba(51, 51, 51, 0.285);
   --gorgeto1: #3d3d3d ;
@@ -62,8 +62,8 @@ body{
   --sotetebbbetu: rgb(37, 37, 37);
   --oldalszin: rgb(0, 0, 0) !important;
   --masodszin: #4f546e ;
-  --harmadszin: rgba(228, 228, 228, 0.792) !important;
-  --negyedszin: rgba(205, 205, 205, 0.789) !important;
+  --harmadszin: rgba(228, 228, 228, 0.933) !important;
+  --negyedszin: rgba(205, 205, 205, 0.393) !important;
   --otodszin: rgba(229, 229, 229, 0.789) !important;
   --gorgeto1: #f3f3f3 !important;
   --gorgeto2: #7c7c7c !important;
@@ -237,6 +237,7 @@ color:var(--oldalszin) !important;
   }
   #tartalom{
     background-color: #f3f3f3;
+    
   }
   #ps1szoveg p{
     font-family: zrnic;
@@ -528,10 +529,11 @@ footer .col-md p{
   -o-transition: 0.6s !important;
   display: block;
   background: var(--harmadszin);
+
   height:fit-content;
   width: 100%;
   z-index: 0;
-  backdrop-filter: blur(2px);
+  backdrop-filter: blur(10px);
 }
 #tartalomszoveg{
   z-index:20;
@@ -540,10 +542,11 @@ footer .col-md p{
   margin:0 auto;
   color: var(--sotetebbbetu) !important;
   padding-bottom:120px;
+  
 }
 #tartalomrow{
   font-size: var(--szoveg);
-  max-width: 1300px !important;
+  max-width: 1400px !important;
   border-radius: var(--border-radius) !important;
   -webkit-border-radius: var(--border-radius) !important;
   -moz-border-radius: var(--border-radius) !important;
@@ -551,9 +554,7 @@ footer .col-md p{
   -o-border-radius: var(--border-radius) !important;
 
 }
-#tartalomhr{
-  max-width: 1280px !important;
-}
+
 #kezdohr{
   max-width: 300px !important;
   height: 0.01px;
@@ -570,13 +571,14 @@ footer .col-md p{
     -ms-border-radius: var(--border-radius) !important;
     -o-border-radius: var(--border-radius) !important;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
+    box-sizing: border-box;
 }
 }
 #udvozoljuk{
   border-radius: var(--border-radius) !important;
   background: var(--negyedszin) !important;
   color: var(--oldalszin)  !important;
-  max-width: 1280px;
+  max-width: 1380px;
   text-align: center;
   font-size: var(--cim);
   margin:0 auto !important;
@@ -977,6 +979,7 @@ nav{
   -moz-transition: 0.5s !important;
   -ms-transition: 0.5s !important;
   -o-transition: 0.5s !important;
+
 }
 #visszaatetejehez:hover{
   color: var(--visszaatetejehezhoverszin) !important;
