@@ -41,8 +41,8 @@ body{
   --betolto: #f3f3f3;
   --navszin: black;
   --sotetebbbetu: rgb(211, 211, 211);
-  --visszaatetejehez: rgba(5, 5, 5, 0.663);
-  --visszaatetejehezhover: rgb(117, 117, 117);
+  --hosszabbgomb: rgba(5, 5, 5, 0.663);
+  --hosszabbgombhover: rgb(117, 117, 117);
   --border-radius: 15px;
   --bold-color:#878787;
   --gombhover: black;
@@ -54,8 +54,8 @@ body{
   --cim: clamp(1.625rem, 1.5814rem + 0.3488vw, 2rem);
   --footerszoveg: clamp(1.0625rem, 1.0407rem + 0.1744vw, 1.25rem);
   --navbarcim: clamp(1.4375rem, 1.4012rem + 0.2907vw, 1.75rem);
-  --visszaatetejehezszin: #f3f3f3;
-  --visszaatetejehezhoverszin: rgb(0, 0, 0);
+  --hosszabbgombszin: #f3f3f3;
+  --hosszabbgombhoverszin: rgb(0, 0, 0);
 }
 
 .vilagos-tema{
@@ -76,10 +76,10 @@ body{
   --betoltoforgo: #2f2f2f;
   --betolto: #adadad;
   --navszin: #f3f3f3;
-  --visszaatetejehez: rgb(0, 0, 0);
-  --visszaatetejehezszin: #f3f3f3;
-  --visszaatetejehezhover: rgb(117, 117, 117);
-  --visszaatetejehezhoverszin: #f3f3f3;
+  --hosszabbgomb: rgb(0, 0, 0);
+  --hosszabbgombszin: #f3f3f3;
+  --hosszabbgombhover: rgb(117, 117, 117);
+  --hosszabbgombhoverszin: #f3f3f3;
   --bold-color:#393939;
   --gombhover: white;
   transition: 0.6s !important;
@@ -793,6 +793,7 @@ nav{
   -moz-transition: 0.5s;
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
+  margin-top: 10px !important;
 }
 #tamogataskep:hover{
   transform: translateY(-5px);
@@ -957,13 +958,12 @@ nav{
     padding-right: 5px !important;
   
 }
-#visszaatetejehez{
+#hosszabbgomb{
   border-radius: 30px!important;
-  background: var(--visszaatetejehez) !important;
-  color: var(--visszaatetejehezszin)  !important;
-  min-width: 100% !important;
+  background: var(--hosszabbgomb) !important;
+  color: var(--hosszabbgombszin)  !important;
+  max-width: 95% !important;
   text-align: center;
-  margin:0 auto !important;
   padding:10px !important;
   padding-left: 15px !important;
   padding-right: 15px !important;
@@ -980,11 +980,59 @@ nav{
   -moz-transition: 0.5s !important;
   -ms-transition: 0.5s !important;
   -o-transition: 0.5s !important;
-
+  position: absolute;
+  bottom: 20px;
+  left:0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
 }
-#visszaatetejehez:hover{
-  color: var(--visszaatetejehezhoverszin) !important;
-  background: var(--visszaatetejehezhover) !important;
+#aprojektgomb{
+
+    border-radius: 30px!important;
+    background: var(--hosszabbgomb) !important;
+    color: var(--hosszabbgombszin)  !important;
+    max-width: 90% !important;
+    text-align: center;
+    margin:0 auto !important;
+    padding:10px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    font-weight: 500 !important;
+    font-family: zrnic !important;
+    -webkit-border-radius: 30px!important;
+    -moz-border-radius: 30px!important;
+    -ms-border-radius: 30px!important;
+    -o-border-radius: 30px!important;
+    border:none !important;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
+    transition: 0.5s !important;
+    -webkit-transition: 0.5s !important;
+    -moz-transition: 0.5s !important;
+    -ms-transition: 0.5s !important;
+    -o-transition: 0.5s !important;
+    position: absolute;
+    bottom: 20px;
+    left:0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+  
+}
+#aprojektgomb:hover{
+  color: var(--hosszabbgombhoverszin) !important;
+  background: var(--hosszabbgombhover) !important;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
+}
+#hosszabbgomb:hover{
+  color: var(--hosszabbgombhoverszin) !important;
+  background: var(--hosszabbgombhover) !important;
   transition: 0.5s !important;
   -webkit-transition: 0.5s !important;
   -moz-transition: 0.5s !important;
@@ -1004,4 +1052,10 @@ nav{
 }
 .nav-item{
   letter-spacing: 1px;
+}
+.nav-item{
+  font-weight: 470 !important;
+}
+.active{
+  font-weight: 600 !important;
 }
