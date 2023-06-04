@@ -53,7 +53,7 @@ body{
   --szoveg: clamp(1.1875rem, 1.1512rem + 0.2907vw, 1.5rem);
   --navbarszoveg:  clamp(1.1875rem, 1.1657rem + 0.1744vw, 1.375rem);
   --cim: clamp(1.625rem, 1.5814rem + 0.3488vw, 2rem);
-  --footerszoveg: clamp(1.0625rem, 1.0262rem + 0.2907vw, 1.375rem);
+  --footerszoveg:  clamp(1.0625rem, 1.0262rem + 0.2907vw, 1.375rem);
   --navbarcim: clamp(1.5625rem, 1.5407rem + 0.1744vw, 1.75rem);
 }
 
@@ -246,6 +246,11 @@ color:var(--oldalszin) !important;
     font-weight: 660;
     animation: attunes 1.2s ease-in-out forwards;
     -webkit-animation: attunes 1.2s ease-in-out forwards;
+}
+@media screen and (max-width: 767px) {
+  #ps1szoveg{
+    margin-top: 20vh !important;
+  }
 }
 #ps1szoveg span{
     display: inline-block !important;
