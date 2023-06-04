@@ -38,17 +38,19 @@ document.addEventListener('DOMContentLoaded', function() {
 var temavaltoikon = document.getElementById("temavalto");
 var pslogo = document.getElementById('pslogo');
 var tema;
-
+var betoltologo = document.getElementById("betoltokep");
 let temamod = localStorage.getItem("temamod");
 if (temamod === 'vilagos') {
 	document.body.classList.add("vilagos-tema");
 	if (temamod === 'vilagos') {
 		temavaltoikon.src = "./images/hold.png";
 		pslogo.src = "./images/playblack.png";
+		betoltologo.src = "./images/playblack.png";
 	} else {
 		document.body.classList.add("");
 		temavaltoikon.src = "./images/nap.png";
 		pslogo.src = "./images/playwhite.png";
+		betoltologo.src = "./images/playwhite.png";
 	}
 }
 
@@ -57,10 +59,12 @@ function temavaltas() {
 	if (document.body.classList.contains("vilagos-tema")) {
 		temavaltoikon.src = "./images/hold.png";
 		pslogo.src = "./images/playblack.png";
+		betoltologo.src = "./images/playblack.png";
 		tema = 'vilagos';
 	} else {
 		temavaltoikon.src = "./images/nap.png";
 		pslogo.src = "./images/playwhite.png";
+		betoltologo.src = "./images/playwhite.png";
 		tema = 'sotet';
 	}
 
