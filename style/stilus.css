@@ -324,7 +324,7 @@ color:var(--oldalszin) !important;
  
 }
 nav{
-  padding: 30px !important;
+  padding: 25px !important;
 }
 #navbarText{
     font-size: var(--navbarszoveg) ;
