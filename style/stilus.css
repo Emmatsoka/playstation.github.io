@@ -323,8 +323,9 @@ color:var(--oldalszin) !important;
 
  
 }
+
 nav{
-  padding: 25px !important;
+  padding: 20px !important;
 }
 #navbarText{
     font-size: var(--navbarszoveg) ;
@@ -373,6 +374,7 @@ nav{
   -webkit-animation: borderlent 0.5s ease-in-out forwards;
 }
 .nav-item{
+  
   color:var(--oldalszin) ;
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
@@ -381,6 +383,7 @@ nav{
   -o-transition: 0.6s !important;
 }
 .nav-link{
+
   padding-right: 15px !important;
   padding-left: 15px !important;
   transition: 0.6s !important;
