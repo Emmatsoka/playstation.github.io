@@ -303,6 +303,7 @@ color:var(--oldalszin) !important;
 }
 
 .navbar-brand{
+  padding: 10px !important;
     font-weight: 700;
     font-size: var(--navbarcim);
     font-family:
@@ -319,7 +320,11 @@ color:var(--oldalszin) !important;
 .navbar-nav{
     float:right !important;
     text-align: right !important;
+
  
+}
+nav{
+  padding: 30px !important;
 }
 #navbarText{
     font-size: var(--navbarszoveg) ;
@@ -376,6 +381,8 @@ color:var(--oldalszin) !important;
   -o-transition: 0.6s !important;
 }
 .nav-link{
+  padding-right: 15px !important;
+  padding-left: 15px !important;
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
