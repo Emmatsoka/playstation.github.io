@@ -323,7 +323,9 @@ color:var(--oldalszin) !important;
 
  
 }
-
+.szurke{
+  color: var(--bold-color) !important;
+}
 nav{
   padding: 20px !important;
 }
