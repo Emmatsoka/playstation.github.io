@@ -32,10 +32,11 @@ body{
 }
 
 :root{
+  --gombhoverhatter:rgb(202, 207, 217);
   --navhoverszoveg: #000000;
   --navhatter: rgba(0, 0, 0, 0.745);
   --oldalszin: #f3f3f3 ;
-  --masodszin: #878ba1 ;
+  --masodszin: #4569a3 ;
   --harmadszin: rgba(9, 9, 9, 0.984) ;
   --negyedszin: rgba(40, 40, 40, 0.285) ;
   --otodszin: rgba(51, 51, 51, 0.285);
@@ -69,6 +70,7 @@ body{
 }
 
 .vilagos-tema{
+  --gombhoverhatter:rgb(59, 59, 59);
   --navhoverszoveg: #f3f3f3;
   --navhatter: rgba(255, 255, 255, 0.348);
   --sotetebbbetu: rgb(37, 37, 37);
@@ -315,7 +317,7 @@ color:var(--oldalszin) !important;
 #gomb:hover{
   color: var(--gombhover);
   transition: 0.4s !important;
-  background: rgb(117, 117, 117);
+  background: var(--gombhoverhatter);
   padding-top: 12.5px;
   padding-bottom: 12.5px;
   padding-left: 17.5px;
@@ -735,12 +737,23 @@ footer ul li a:hover{
   -ms-transition: transform 0.4s ease-out;
   -o-transition: transform 0.4s ease-out;
 }
-#nav-link #temavalto{
+ #temavalto{
   border:none !important;
 }
+#temavalto:hover{
+  transition: 0.5s;
+  opacity: 0.80;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  animation: spin 4s ease infinite;
+  -webkit-animation: spin 4s ease infinite;
+}
 #temavalto{
-  height: 20px !important;
-  width: 20px !important;
+  transition: 0.5s;
+  height: 25px !important;
+  width: 25px !important;
   margin-top: 10px;
   margin-left: 10px;
   z-index: 666;
@@ -780,6 +793,9 @@ nav{
   #temavalto{
     margin:0 auto;
     margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    right: 50%;
   }
 
   .nav-link{
@@ -816,10 +832,22 @@ nav{
   height: fit-content !important;
 }
 }
+footer{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
 @media screen and (min-width: 991px) {
   .navbar-nav .dropdown-menu{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     width: 250px;
+  }
+  header{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  footer{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
   .dropdown-item{
     padding-top: 7px;
@@ -866,7 +894,7 @@ nav{
     -o-transition: 0.5s all;
     margin:0 auto;
 }
-.navbar-nav #temavalto{
+ #temavalto{
   position: absolute;
   right: 20px;
   top: 30px;
@@ -1090,6 +1118,7 @@ nav{
   opacity: 1;
   padding: 0.5rem 0;
   border:none !important;
+  margin-top: 10px;
 }
 
 #cimsor{
@@ -1271,8 +1300,4 @@ nav{
 }
 .navbar-nav{
   z-index: 500 !important;
-}
-footer{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
 }
