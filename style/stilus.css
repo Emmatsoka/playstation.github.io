@@ -32,6 +32,7 @@ body{
 }
 
 :root{
+  --active: rgba(255, 255, 255, 0.075);
   --gombhoverhatter:rgb(202, 207, 217);
   --navhoverszoveg: #000000;
   --navhatter: rgba(0, 0, 0, 0.745);
@@ -71,7 +72,25 @@ body{
   --hosszabbgombhoverszin: rgb(0, 0, 0);
 }
 
+.dropdown-menu .active{
+  background-color: #62626255 !important;
+}
+.active a:not(.dropdown-item){
+  
+  transition: 0.3s;
+  background: var(--active);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
 .vilagos-tema{
+  --active: rgba(0, 0, 0, 0.068);
   --lin1: rgba(255, 255, 255, 0.285);
   --lin2: rgba(204, 204, 204, 0.423);
   --gombhoverhatter:rgb(59, 59, 59);
@@ -356,7 +375,14 @@ color:var(--oldalszin) !important;
     float:right !important;
     text-align: right !important;
 
+
+
  
+}
+.dropdown-menu .dropdown-menu-right .show{
+  
+  backdrop-filter: blur(8px) !important;
+
 }
 .szurke{
   color: var(--bold-color) !important;
@@ -408,7 +434,7 @@ nav{
 }
 .nav-link:hover{
   transition: 0.3s;
-  background: var(--oldalszin);
+  background: var(--oldalszin) !important;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -481,14 +507,7 @@ nav{
   -ms-transition: 0.6s !important;
   -o-transition: 0.6s !important;
 }
-.active a{
-    color: var(--masodszin) !important;
-    transition: 0.6s !important;
-    -webkit-transition: 0.6s !important;
-    -moz-transition: 0.6s !important;
-    -ms-transition: 0.6s !important;
-    -o-transition: 0.6s !important;
-}
+
 .row{
     max-width: 100% !important;
     margin: 0 auto !important
@@ -911,6 +930,7 @@ header{
     -ms-transition: 0.5s all;
     -o-transition: 0.5s all;
     margin:0 auto;
+    backdrop-filter: blur(8px) !important;
 }
  #temavalto{
   position: absolute;
@@ -929,6 +949,9 @@ header{
     z-index:669 !important;
     min-width: 70% !important;
   }
+}
+#navbarDropdownMenuLink:focus{
+  background-color: var(--oldalszin);
 }
 .img-fluid{
   z-index:669 !important;
@@ -1285,9 +1308,7 @@ header{
 #also ul li img{
   cursor:pointer !important;
 }
-.dropdown-menu .active{
-  background-color: #62626255 !important;
-}
+
 .nav-item{
   letter-spacing: 1px;
 }
@@ -1325,4 +1346,17 @@ header{
 .navbar-nav .nav-link {
   padding-right: 15px;
   padding-left: 15px;
+}
+.show {
+  transition: 0.3s;
+
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
