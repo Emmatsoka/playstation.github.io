@@ -286,6 +286,9 @@ color:var(--oldalszin) !important;
   #ps1szoveg{
     margin-top: 20vh !important;
   }
+  .mozgo-kep{
+    scale: 0.1 !important;
+  }
 }
 #ps1szoveg span{
     display: inline-block !important;
