@@ -392,10 +392,32 @@ nav{
 
   }
 }
-.nav-item:hover {
-  animation: borderlent 0.5s ease-in-out forwards;
-  -webkit-animation: borderlent 0.5s ease-in-out forwards;
+.nav-link:hover{
+  transition: 0.3s;
+  background: var(--oldalszin);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
 }
+.nav-link:hover img{
+  transition: 0.5s;
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.nav-item:not(.dropdown-item):hover > a {
+  color: var(--navszin) !important;
+}
+
 .nav-item{
 
   color:var(--oldalszin) ;
