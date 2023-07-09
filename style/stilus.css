@@ -32,6 +32,7 @@ body{
 }
 
 :root{
+  --navhoverszoveg: #000000;
   --navhatter: rgba(0, 0, 0, 0.745);
   --oldalszin: #f3f3f3 ;
   --masodszin: #878ba1 ;
@@ -41,14 +42,14 @@ body{
   --gorgeto1: #3d3d3d ;
   --gorgeto2: #7c7c7c ;
   --gorgeto3: #626262 ;
-  --hatter: url('../images/kekhatter.png');
+  --hatter: url('../images/hatterr.png');
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.875)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   --tartalomcol: #0000005c;
   --dropdownhovera: rgb(224, 224, 224);
   --dropdownhover: rgba(50, 50, 50, 0.749);
   --betoltoforgo: #626b9e ;
   --betolto: #f3f3f3;
-  --navszin: black;
+  --navszin: rgba(0, 0, 0, 0.766);
   --sotetebbbetu: rgb(211, 211, 211);
   --hosszabbgomb: rgba(5, 5, 5, 0.663);
   --hosszabbgombhover: rgb(117, 117, 117);
@@ -68,6 +69,7 @@ body{
 }
 
 .vilagos-tema{
+  --navhoverszoveg: #f3f3f3;
   --navhatter: rgba(255, 255, 255, 0.348);
   --sotetebbbetu: rgb(37, 37, 37);
   --oldalszin: rgb(0, 0, 0) !important;
@@ -78,14 +80,14 @@ body{
   --gorgeto1: #f3f3f3 !important;
   --gorgeto2: #7c7c7c !important;
   --gorgeto3: #626262 !important;
-  --hatter: url('../images/feherhatter.png');
+  --hatter: url('../images/hatterrw.png');
   --navburger: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.951)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   --tartalomcol: #ffffff5c;
   --dropdownhover: rgb(191, 191, 191);
   --dropdownhovera: rgba(50, 50, 50, 0.749);
   --betoltoforgo: #2f2f2f;
   --betolto: #adadad;
-  --navszin: #f3f3f3;
+  --navszin: #f3f3f38a;
   --hosszabbgomb: rgb(0, 0, 0);
   --hosszabbgombszin: #f3f3f3;
   --hosszabbgombhover: rgb(117, 117, 117);
@@ -98,7 +100,10 @@ body{
   -ms-transition: 0.6s !important;
   -o-transition: 0.6s !important;
 }
-
+header{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 body{
     margin:0 !important;
     padding:0 !important;
@@ -405,6 +410,19 @@ nav{
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
+.nav-link:focus{
+  transition: 0.3s;
+  background: var(--oldalszin);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
 .nav-link:hover img{
   transition: 0.5s;
   filter:invert(100%);
@@ -415,9 +433,20 @@ nav{
   -o-transition: 0.5s;
 }
 .nav-item a:hover {
-  color: var(--navszin) !important;
+  color: var(--navhoverszoveg) !important;
 }
-
+.nav-item a:focus{
+  color: var(--navhoverszoveg) !important;
+}
+.nav-link:focus img{
+  transition: 0.5s;
+  filter:invert(100%);
+  -webkit-filter:invert(100%);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
 .nav-item{
 
   color:var(--oldalszin) ;
@@ -1017,12 +1046,15 @@ nav{
   -o-transition: 0.6s !important;
 }
 .attunonav{
-  transition: 0.5s;
+  transition: 0.5s all;
   background: linear-gradient(to bottom, var(--navszin), rgba(0, 0, 0, 0));
-  -webkit-transition: 0.5s;
-  -moz-transition: 0.5s;
-  -ms-transition: 0.5s;
-  -o-transition: 0.5s;
+  -webkit-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -o-transition: 0.5s all;
+}
+#idezetes{
+  letter-spacing: 2px;
 }
 #egesz.aktiv {
   opacity:1;
@@ -1057,6 +1089,7 @@ nav{
   max-height: 500px;
   opacity: 1;
   padding: 0.5rem 0;
+  border:none !important;
 }
 
 #cimsor{
@@ -1235,4 +1268,11 @@ nav{
 
 .d-flex{
   float:right !important;
+}
+.navbar-nav{
+  z-index: 500 !important;
+}
+footer{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
