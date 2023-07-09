@@ -1071,3 +1071,18 @@ nav{
 .active{
   font-weight: 600 !important;
 }
+
+.link{
+  color:#4f546e;
+  text-decoration: underline;
+  font-style: italic;
+}
+.link:hover{
+  text-decoration: underline !important;
+  font-style: italic;
+  color:#7c7c7c;
+}
+.link:visited{
+  text-decoration: none !important;
+  font-weight: bold;
+}
