@@ -953,6 +953,9 @@ header{
 #navbarDropdownMenuLink:focus{
   background-color: var(--oldalszin);
 }
+.nav-link:focus{
+  background: var(--oldalszin) !important;
+}
 .img-fluid{
   z-index:669 !important;
   display: inline;
