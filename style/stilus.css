@@ -72,6 +72,8 @@ body{
 }
 
 .vilagos-tema{
+  --lin1: rgba(255, 255, 255, 0.285);
+  --lin2: rgba(204, 204, 204, 0.423);
   --gombhoverhatter:rgb(59, 59, 59);
   --navhoverszoveg: #f3f3f3;
   --navhatter: rgba(255, 255, 255, 0.348);
@@ -843,6 +845,16 @@ footer{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
+#attuneses{
+  header{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+header{
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 @media screen and (min-width: 991px) {
   .navbar-nav .dropdown-menu{
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
@@ -853,8 +865,8 @@ footer{
     border-bottom-right-radius: 30px;
   }
   footer{
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
   }
   .dropdown-item{
     padding-top: 7px;
