@@ -539,7 +539,7 @@ footer{
   background-color: black;
   height: fit-content;
   max-width: 100%;
-  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.929);
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.222);
 }
 .feher{
   color:#f3f3f3;
@@ -842,17 +842,12 @@ nav{
 }
 }
 footer{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 20px ;
+  border-top-right-radius: 20px ;
 }
-#attuneses{
-  header{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
-}
+
 header{
-  border-bottom-left-radius: 20px;
+  border-bottom-left-radius: 20px ;
   border-bottom-right-radius: 20px;
 }
 @media screen and (min-width: 991px) {
@@ -861,7 +856,7 @@ header{
     width: 250px;
   }
   header{
-    border-bottom-left-radius: 30px;
+    border-bottom-left-radius: 30px ;
     border-bottom-right-radius: 30px;
   }
   footer{
