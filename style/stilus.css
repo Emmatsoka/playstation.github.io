@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: psbetu;
     src: url(../fonts/psbetu.ttf);
@@ -10,6 +12,12 @@
 }
 html{
   scroll-behavior: smooth;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 
   
 }
@@ -24,6 +32,7 @@ body{
 }
 
 :root{
+  --navhatter: rgba(0, 0, 0, 0.745);
   --oldalszin: #f3f3f3 ;
   --masodszin: #626b9e ;
   --harmadszin: rgba(9, 9, 9, 0.984) ;
@@ -59,6 +68,7 @@ body{
 }
 
 .vilagos-tema{
+  --navhatter: rgba(255, 255, 255, 0.348);
   --sotetebbbetu: rgb(37, 37, 37);
   --oldalszin: rgb(0, 0, 0) !important;
   --masodszin: #4f546e ;
@@ -229,11 +239,22 @@ color:var(--oldalszin) !important;
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: var(--gorgeto2);
-  }
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--gorgeto3);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
   }
   #tartalom{
     background-color: #f3f3f3;
@@ -376,7 +397,7 @@ nav{
   -webkit-animation: borderlent 0.5s ease-in-out forwards;
 }
 .nav-item{
-  
+
   color:var(--oldalszin) ;
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
@@ -386,8 +407,7 @@ nav{
 }
 .nav-link{
 
-  padding-right: 15px !important;
-  padding-left: 15px !important;
+
   transition: 0.6s !important;
   -webkit-transition: 0.6s !important;
   -moz-transition: 0.6s !important;
@@ -676,15 +696,17 @@ footer ul li a:hover{
   cursor:pointer;
   border: none !important;
 }
+
 @media screen and (max-width: 991px) {
   .navbar-nav{
     float: none !important;
     width: 100% !important;
-    text-align: center !important;
+    text-align: left !important;
+    align-items: start !important;
 }
 .dropdown-toggle{
   float: none !important;
-  text-align: center;
+  text-align: left;
 }
 nav{
   background: linear-gradient(to bottom, #10101063, rgba(0, 0, 0, 0)) !important;
@@ -693,11 +715,110 @@ nav{
 }
 .nav-link{
   float: none !important;
-  text-align: center;
+  text-align: center !important;
+  
+}
+.nav-item{
+  margin:0 auto;
+}
+.navbar-nav{
+  margin:0 auto;
 }
 }
+@media screen and (max-width: 991px) {
+  #temavalto{
+    margin:0 auto;
+    margin-top: 10px;
+  }
+  .nav-link{
+    margin-right: 35px !important;
+    margin-left: 35px !important;
+  }
+  .navbar-nav .dropdown-menu{
+    width: 90vw;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border: 0.01mm rgba(250, 250, 250, 0.677) solid;
+  }
+.nav-link img{
+ margin-right: 6px;
+}
+.nav-item #temavalto{
+  align-items: center !important;
+  text-align: center !important;
+}
+.show{
+  height: 100vh;
+  transition: 0.5s !important;
+  -webkit-transition: 0.5s !important;
+  -moz-transition: 0.5s !important;
+  -ms-transition: 0.5s !important;
+  -o-transition: 0.5s !important;
 
+}
+.dropdown-menu{
+  height: fit-content !important;
+}
+.navbar-nav .show{
+  height: fit-content !important;
+}
+}
 @media screen and (min-width: 991px) {
+  .navbar-nav .dropdown-menu{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+  }
+  .dropdown-item{
+    padding-top: 7px;
+    padding-bottom: 7px;
+  
+  }
+  .nav-item{
+    margin-right: 35px !important;
+    margin-left: 35px !important;
+  }
+  #navbarText{
+    margin-left: -10% !important;
+  }
+  .nav-link img{
+    margin-bottom: 3px;
+    margin-right: 7px;
+    margin-right: 4px;
+  }
+  .navbar-expand-lg .navbar-nav .dropdown-menu{
+    margin-top: 15px;
+    background-color: var(--navhatter) !important;
+  }
+  .nav-item{
+    width: fit-content !important;
+  }
+  .nav-link{
+    width: fit-content !important;
+  }
+  .navbar-nav{
+    font-size: 20px;
+    margin-right: 60px;
+    background-color: var(--navhatter);
+    transition: 0.5s all;
+    padding: 5px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    margin:0 auto;
+}
+.navbar-nav #temavalto{
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
   .img-fluid{
     max-width: 70% !important;
     transition: 0.5s;
@@ -1086,3 +1207,8 @@ nav{
   text-decoration: none !important;
   font-weight: bold;
 }
+
+.d-flex{
+  float:right !important;
+}
+

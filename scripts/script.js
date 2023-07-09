@@ -39,6 +39,10 @@ var temavaltoikon = document.getElementById("temavalto");
 var pslogo = document.getElementById('pslogo');
 var tema;
 var betoltologo = document.getElementById("betoltokep");
+var fooldalkep = document.getElementById("fooldalkep");
+var arajtkep = document.getElementById("arajtkep");
+var tovabbiakkep = document.getElementById("tovabbiakkep");
+var aprojektkep = document.getElementById("aprojektkep");
 let temamod = localStorage.getItem("temamod");
 if (temamod === 'vilagos') {
 	document.body.classList.add("vilagos-tema");
@@ -46,11 +50,20 @@ if (temamod === 'vilagos') {
 		temavaltoikon.src = "./images/hold.png";
 		pslogo.src = "./images/playblack.png";
 		betoltologo.src = "./images/playblack.png";
+		fooldalkep.src = "./images/fooldal.png";
+		arajtkep.src = "./images/arajt.png";
+		tovabbiakkep.src = "./images/tovabbiak.png";
+		aprojektkep.src = "./images/aprojekt.png";
+
 	} else {
 		document.body.classList.add("");
 		temavaltoikon.src = "./images/nap.png";
 		pslogo.src = "./images/playwhite.png";
 		betoltologo.src = "./images/playwhite.png";
+		fooldalkep.src = "./images/fooldalvilagos.png";
+		arajtkep.src = "./images/arajtvilagos.png";
+		tovabbiakkep.src = "./images/tovabbiakvilagos.png";
+		aprojektkep.src = "./images/aprojektvilagos.png";
 	}
 }
 
@@ -60,11 +73,19 @@ function temavaltas() {
 		temavaltoikon.src = "./images/hold.png";
 		pslogo.src = "./images/playblack.png";
 		betoltologo.src = "./images/playblack.png";
+		fooldalkep.src = "./images/fooldal.png";
+		arajtkep.src = "./images/arajt.png";
+		tovabbiakkep.src = "./images/tovabbiak.png";
+		aprojektkep.src = "./images/aprojekt.png";
 		tema = 'vilagos';
 	} else {
 		temavaltoikon.src = "./images/nap.png";
 		pslogo.src = "./images/playwhite.png";
 		betoltologo.src = "./images/playwhite.png";
+		fooldalkep.src = "./images/fooldalvilagos.png";
+		arajtkep.src = "./images/arajtvilagos.png";
+		tovabbiakkep.src = "./images/tovabbiakvilagos.png";
+		aprojektkep.src = "./images/aprojektvilagos.png";
 		tema = 'sotet';
 	}
 
