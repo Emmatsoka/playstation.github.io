@@ -114,7 +114,7 @@ body{
   --dropdownhovera: rgba(50, 50, 50, 0.749);
   --betoltoforgo: #2f2f2f;
   --betolto: #adadad;
-  --navszin: #f3f3f38a;
+  --navszin: #f3f3f3f0;
   --hosszabbgomb: rgb(0, 0, 0);
   --hosszabbgombszin: #f3f3f3;
   --hosszabbgombhover: rgb(117, 117, 117);
@@ -364,7 +364,33 @@ color:var(--oldalszin) !important;
   filter: invert(var(--invert));
   -webkit-filter: invert(var(--invert));
 }
-
+#gomb img{
+  animation: lebegonyil 2s ease-in-out infinite;
+  -webkit-animation: lebegonyil 2s ease-in-out infinite;
+}
+@keyframes lebegonyil{
+  0%{
+    transform: translate(0px, -2px);
+    -webkit-transform: translate(0px, -2px);
+    -moz-transform: translate(0px, -2px);
+    -ms-transform: translate(0px, -2px);
+    -o-transform: translate(0px, -2px);
+}
+  50%{
+    transform: translate(0px, 3px);
+    -webkit-transform: translate(0px, 3px);
+    -moz-transform: translate(0px, 3px);
+    -ms-transform: translate(0px, 3px);
+    -o-transform: translate(0px, 3px);
+}
+  100%{
+    transform: translate(0px, -2px);
+    -webkit-transform: translate(0px, -2px);
+    -moz-transform: translate(0px, -2px);
+    -ms-transform: translate(0px, -2px);
+    -o-transform: translate(0px, -2px);
+}
+}
 .navbar-brand{
   padding: 10px !important;
     font-weight: 700;
