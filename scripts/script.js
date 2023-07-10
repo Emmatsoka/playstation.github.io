@@ -122,10 +122,13 @@ window.onbeforeunload = function () {
 
 const navbar = document.getElementById("nav");
 
+
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
-	navbar.classList.add('attunonav');
+
+    navbar.classList.add('attunonav');
   } else {
-	navbar.classList.remove('attunonav');
+
+    navbar.classList.remove('attunonav');
   }
 });

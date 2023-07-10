@@ -1117,13 +1117,17 @@ header{
   -ms-transition: 0.6s !important;
   -o-transition: 0.6s !important;
 }
+#nav{
+  transition:  0.3s ease;
+
+}
 .attunonav{
-  transition: 0.5s all;
+  transition: opacity 0.3s ease;
   background: linear-gradient(to bottom, var(--navszin), rgba(0, 0, 0, 0));
-  -webkit-transition: 0.5s all;
-  -moz-transition: 0.5s all;
-  -ms-transition: 0.5s all;
-  -o-transition: 0.5s all;
+  -webkit-transition: opacity 0.3s ease;
+  -moz-transition: opacity 0.3s ease;
+  -ms-transition: opacity 0.3s ease;
+  -o-transition: opacity 0.3s ease;
 }
 #idezetes{
   letter-spacing: 2px;
