@@ -419,8 +419,21 @@ color:var(--oldalszin) !important;
   backdrop-filter: blur(8px) !important;
 
 }
-.szurke{
+.deadname{
   color: var(--bold-color) !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.deadname:hover{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  color: rgb(255, 61, 119) !important;
 }
 nav{
   padding: 20px !important;
