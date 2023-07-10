@@ -43,6 +43,16 @@ var fooldalkep = document.getElementById("fooldalkep");
 var arajtkep = document.getElementById("arajtkep");
 var tovabbiakkep = document.getElementById("tovabbiakkep");
 var aprojektkep = document.getElementById("aprojektkep");
+var structkep = document.getElementById("structkep");
+var powerkep = document.getElementById("powerkep");
+var cdiconkep = document.getElementById("cdiconkep");
+var chipkep = document.getElementById("chipkep");
+var paliconkep = document.getElementById("paliconkep");
+var modelkep = document.getElementById("modelkep");
+var hibakep = document.getElementById("hibakep");
+var typekep = document.getElementById("typekep");
+var soundkep = document.getElementById("soundkep");
+var nintendokep = document.getElementById("nintendokep");
 let temamod = localStorage.getItem("temamod");
 if (temamod === 'vilagos') {
 	document.body.classList.add("vilagos-tema");
@@ -54,7 +64,17 @@ if (temamod === 'vilagos') {
 		arajtkep.src = "./images/arajt.png";
 		tovabbiakkep.src = "./images/tovabbiak.png";
 		aprojektkep.src = "./images/aprojekt.png";
-
+		structkep.style.filter = "invert(100%)";
+		powerkep.style.filter = "invert(100%)";
+		cdiconkep.style.filter = "invert(100%)";
+		chipkep.style.filter = "invert(100%)";
+		paliconkep.style.filter = "invert(100%)";
+		modelkep.style.filter = "invert(100%)";
+		hibakep.style.filter = "invert(100%)";
+		typekep.style.filter = "invert(100%)";
+		soundkep.style.filter = "invert(100%)";
+		nintendokep.style.filter = "invert(100%)";
+	
 	} else {
 		document.body.classList.add("");
 		temavaltoikon.src = "./images/nap.png";
@@ -64,6 +84,16 @@ if (temamod === 'vilagos') {
 		arajtkep.src = "./images/arajtvilagos.png";
 		tovabbiakkep.src = "./images/tovabbiakvilagos.png";
 		aprojektkep.src = "./images/aprojektvilagos.png";
+		structkep.style.filter = "invert(0%)";
+		powerkep.style.filter = "invert(0%)";
+		cdiconkep.style.filter = "invert(0%)";
+		chipkep.style.filter = "invert(0%)";
+		paliconkep.style.filter = "invert(0%)";
+		modelkep.style.filter = "invert(0%)";
+		hibakep.style.filter = "invert(0%)";
+		typekep.style.filter = "invert(0%)";
+		soundkep.style.filter = "invert(0%)";
+		nintendokep.style.filter = "invert(0%)";
 	}
 }
 
@@ -77,6 +107,16 @@ function temavaltas() {
 		arajtkep.src = "./images/arajt.png";
 		tovabbiakkep.src = "./images/tovabbiak.png";
 		aprojektkep.src = "./images/aprojekt.png";
+		structkep.style.filter = "invert(100%)";
+		powerkep.style.filter = "invert(100%)";
+		cdiconkep.style.filter = "invert(100%)";
+		chipkep.style.filter = "invert(100%)";
+		paliconkep.style.filter = "invert(100%)";
+		modelkep.style.filter = "invert(100%)";
+		hibakep.style.filter = "invert(100%)";
+		typekep.style.filter = "invert(100%)";
+		soundkep.style.filter = "invert(100%)";
+		nintendokep.style.filter = "invert(100%)";
 		tema = 'vilagos';
 	} else {
 		temavaltoikon.src = "./images/nap.png";
@@ -86,6 +126,16 @@ function temavaltas() {
 		arajtkep.src = "./images/arajtvilagos.png";
 		tovabbiakkep.src = "./images/tovabbiakvilagos.png";
 		aprojektkep.src = "./images/aprojektvilagos.png";
+		structkep.style.filter = "invert(0%)";
+		powerkep.style.filter = "invert(0%)";
+		cdiconkep.style.filter = "invert(0%)";
+		chipkep.style.filter = "invert(0%)";
+		paliconkep.style.filter = "invert(0%)";
+		modelkep.style.filter = "invert(0%)";
+		hibakep.style.filter = "invert(0%)";
+		typekep.style.filter = "invert(0%)";
+		soundkep.style.filter = "invert(0%)";
+		nintendokep.style.filter = "invert(0%)";
 		tema = 'sotet';
 	}
 
