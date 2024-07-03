@@ -61,7 +61,7 @@ body{
   --border-radius: 15px;
   --bold-color:#878787;
   --gombhover: black;
-  --headerszoveg: clamp(1.1875rem, 1.1512rem + 0.2907vw, 1.5rem);
+  --headerszoveg: clamp(1.1875rem, 1.1000rem + 0.2907vw, 1.5rem);
   --headercim:  clamp(1.625rem, 1.5814rem + 0.3488vw, 2rem);
   --gombszoveg: clamp(1.0625rem, 1.048rem + 0.1163vw, 1.1875rem);
   --szoveg: clamp(1.1875rem, 1.1512rem + 0.2907vw, 1.5rem);
@@ -736,7 +736,7 @@ footer .col-md p{
 }
 #udvozoljuk{
   border-radius: var(--border-radius) !important;
-  background: linear-gradient(to right, var(--lin1), var(--lin2)) !important;
+  background: var(--tartalomcol) !important;
   color: var(--oldalszin)  !important;
   max-width: 1380px;
   text-align: center;
