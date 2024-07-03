@@ -323,7 +323,7 @@ color:var(--oldalszin) !important;
   #gomb{
     z-index: 500;
     transition: 0.4s !important;
-    background: linear-gradient(to right, black, rgb(14, 14, 14));
+    background: rgb(14, 14, 14);
     color:#f3f3f3;
     padding-top: 12px;
     padding-bottom: 12px;
