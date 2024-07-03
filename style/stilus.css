@@ -316,7 +316,6 @@ color:var(--oldalszin) !important;
     font-size: var(--headerszoveg);
     font-weight: 300;
     margin-bottom: 10px;
-    font-style: italic;
 }
 #gomb img{
   margin-right: 8px;
