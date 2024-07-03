@@ -1428,3 +1428,18 @@ header{
   filter: invert(100%) !important;
   -webkit-filter: invert(100%) !important;
 }
+
+#projektkep{
+  height: 120px;
+  width: auto ;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 0 auto !important;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px !important;
+  margin-top: 10px !important;
+}
