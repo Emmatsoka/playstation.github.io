@@ -729,7 +729,7 @@ footer .col-md p{
     -moz-border-radius: var(--border-radius) !important;
     -ms-border-radius: var(--border-radius) !important;
     -o-border-radius: var(--border-radius) !important;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.114);
     box-sizing: border-box;
 }
 }
@@ -751,13 +751,13 @@ footer .col-md p{
   -moz-border-radius: var(--border-radius) !important;
   -ms-border-radius: var(--border-radius) !important;
   -o-border-radius: var(--border-radius) !important;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.114);
 }
 @media screen and (max-width: 765px) {
   #tartalomrow{
     background-color: var(--tartalomcol)!important;
     padding: 20px !important;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.114);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.114);
     margin-bottom:20px !important; 
     }
     #udvozoljuk{
