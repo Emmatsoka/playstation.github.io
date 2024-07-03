@@ -1465,4 +1465,7 @@ header{
 .navbar-nav .dropdown-menu {
   width: 100% !important;
 }
+#ps1szoveg {
+  margin-top: 25vh !important;
+}
 }
