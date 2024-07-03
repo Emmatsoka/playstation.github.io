@@ -1443,12 +1443,12 @@ header{
   nav{
     width: calc(100% - 30px);
     margin: 15px;
-    padding: 14px !important;
-    border-radius: 50px !important;
-    -webkit-border-radius: 50px !important;
-    -moz-border-radius: 50px !important;
-    -ms-border-radius: 50px !important;
-    -o-border-radius: 50px !important;
+    padding: 10px !important;
+    border-radius: 30px !important;
+    -webkit-border-radius: 30px !important;
+    -moz-border-radius: 30px !important;
+    -ms-border-radius: 30px !important;
+    -o-border-radius: 30px !important;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.144);
     background: var(--navhatter)!important;
 }
