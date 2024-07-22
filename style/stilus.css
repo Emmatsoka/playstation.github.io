@@ -27,7 +27,7 @@ body{
 :root{
   --invert:100%;
   --active: rgba(255, 255, 255, 0.075);
-  --gombhoverhatter:rgb(202, 207, 217);
+  --gombhoverhatter:rgb(255, 255, 255);
   --navhoverszoveg: #000000;
   --navhatter: rgba(0, 0, 0, 0.745);
   --oldalszin: #f3f3f3 ;
@@ -50,7 +50,7 @@ body{
   --navszin: rgba(0, 0, 0, 0.529);
   --sotetebbbetu: rgb(211, 211, 211);
   --hosszabbgomb: rgba(5, 5, 5, 0.663);
-  --hosszabbgombhover: rgb(117, 117, 117);
+  --hosszabbgombhover: rgb(255, 255, 255);
   --border-radius: 15px;
   --bold-color:#878787;
   --gombhover: black;
